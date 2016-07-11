@@ -1,8 +1,8 @@
 <p align="center">![](images/uframeLogo2.png)
 
-#<span style="color:green;">A Visual Code Writing Engine 
+#<span style="color:green;">An Opensource Visual Code Writing Engine 
 
-[View in Github](https://github.com/uFrame)
+[View in Github](https://github.com/uFrame) | [Trello Board](https://trello.com/b/j4iGjQPb)
 
 ----------
 
