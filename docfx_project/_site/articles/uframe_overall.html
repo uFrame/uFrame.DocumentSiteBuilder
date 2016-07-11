@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>uFrame Overall </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="uFrame Overall ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/blob/master/docfx_project/articles/uframe_overall.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <h1 id="uframe-overall">uFrame Overall</h1>
+              
+<blockquote><p>Arthor : nitreo</p>
+<p>This article describes uFrame editor-side architecture as it was left after being open-sourced.</p>
+<p>This article covers only newer editor engine on which ECS runs and by all means ignores old MVVM-related engine.</p>
+</blockquote>
+<p>Overall structure:</p>
+<ul>
+<li>Application Engine</li>
+<li>Diagram Engine</li>
+<li>Code Generation</li>
+<li>Database Engine</li>
+</ul>
+<h2 id="application-engine">Application Engine</h2>
+<h3 id="uframe-editor-application">uFrame Editor Application</h3>
+<p>The key class is called InvertApplication which contains one magic property: Container</p>
+<p>Container is one of the most important parts as it is shared throughout all the services and provides dependency injection and some other stuff.</p>
+<p>At the moment that Container is first accessed from anywhere, all assemblies are analyzed to find types that inherit from CorePlugin. Those classes (plugins) are then initialized, registered inside the container and get ready for action. Thus, if you don’t touch container property, nothing will be loaded. The class that usually accesses container first is DesignerWindow. Thus, when you click Window -&gt; Graph Designer, this window is created, container is touched and application is loaded.</p>
+<p>uFrame follows plugin-based approach. Thus, you create a service/plugin by deriving your class from DiagramPlugin or CorePlugin. You then get access to entire uFrame architecture. Your class will be automatically loaded, if contained under “Editor” folder. It will also be registered in the container. DiagramPlugin and CorePlugin contain some lifecycle methods like Initialize and Loaded.</p>
+<h3 id="communication-between-plugins">Communication between plugins</h3>
+<p>Plugin communication is achieved via Interface-based event system which is further extended to support commands.</p>
+<p>Basic approach is the following:</p>
+<p>   InvertApplication.SignalEvent<iloggedinevent>(<em> =&gt; </em>.LoggedIn()); <p>
+<p>Once this line is executed, LoggedIn() will be executed on every service (DiagramPlugin or CorePlugin) which implements ILoggedInEvent.</p>
+<p>The more sophisticated approach is command extension which requires your service to implement special generic interface like this one: IExecuteCommand<logincommand><p>
+<p>You can then do InvertApplication.Execute(new LoginCommand());</p>
+<p>This will invoke handlers on all services that implement  IExecuteCommand<logincommand><p>
+<p>This approach also triggeres ICommandExecuting and ICommandExecuted handlers. They are used to perform clean up or refresh some of the data based on what command has been executed.</p>
+<h2 id="diagram-engine">Diagram Engine</h2>
+<p>The Diagram Engine follows the following pattern:</p>
+<p>NodeData (NodeModel) -&gt; NodeViewModel -&gt; NodeDrawer
+ConnectionData (ConnectionModel) -&gt; ConnectionViewModel -&gt; ConnectionDrawer
+Same applies for properties, slots, items, sections - everything.</p>
+<p>Models are serialized into JSON, thus represent persistent data.
+ViewModel represent runtime data and are bound to Models. 
+Drawers are bound to viewmodels and are used to draw nodes.</p>
+<p>Drawers are somewhat of an outstanding concept. </p>
+<p>Starting from ECS, we tend to do UI using the following pattern: 
+Create interface IDrawSomething
+Then, to draw something, you do InvertApplication.SignalEvent<idrawsomething>...
+This is how most of non-diagram UI currently works. <p>
+<p>However, Drawers were left as is, because they are generally faster.</p>
+<h3 id="note-about-architect">Note about Architect</h3>
+<p>Architect was(is) an internal project that let’s you generate Models, ViewModels and Drawers based on diagram data: i.e. it allows you to prototype your own node-based framework.
+Architect, thus, can be built using architect :P</p>
+<p>It’s is important to note, that architect still needs some polishing. It does not generate “Everything”. Afaik, some of the new features are not available directly from the architect. But it suffice to bootstrap your plugin. When using it, make sure you do not modify designer files and only mess up with editables.</p>
+<h2 id="code-generation">Code Generation</h2>
+<p>Code Generation framework started as a simple wrapper around code dome, but now it is sophisticated template-based codegen system. It can generate classes based off any data.</p>
+<p>Templates support attribute helpers which are sufficient in most cases. Should you need any crazy code generation rules, manual setup is always available along with direct access to code dome.</p>
+<h2 id="database-engine">Database engine</h2>
+<p>It may not be obvious, but as uFrame was progressing, it was constantly being knocked back by some of Unity architectural problems/features. One one those is scriptable object.</p>
+<p>Back in MVVM days, all diagram data was stored inside serializable scriptable object. As we moved along and developed complex relationships between nodes/items, uFrame became slower and slower and more error prone due to data being monolithic and hard to manage.</p>
+<p>When transitioning to ECS, Database Repository was created, that stored all the diagram data entries as separated JSON files, packed into so called Database.
+The key idea here is that every record is defined by it’s type and ID.Database then contains folders for each type. Inside those folders, json files are stored, named after it’s ID. ex:</p>
+<p>MyStuff.db / MyNamespace.MyType / my-id.json</p>
+<p>Not only this decoupled a lot of uframe concepts, but also boosted performance a lot, giving a lot of space for data analysis and validation.</p>
+<p>This Database repository can potentially be used on client side, with some modifications around data paths and some internal, uframe specific events. </p>
+<hr>
+<p><strong>Random notes to process later</strong></p>
+<h2 id="koinonia">Koinonia</h2>
+<p>Koinonia was started as a package manager for uFrame. It was supposed to load different plugins/scripts/frameworks similar to asset store, nuget or npm. </p>
+<p>Motivation: asset store is great for art assets that do not need to be supported. But it is not that great for scripts. Sometime you want version control. Dependency management, installation etc. This is not possible with how asset store approaches things. So we attempted to create something better, but never had free time to finish it. </p>
+<p>Right now, when uFrame is not commercial anymore, I think it is better to build on top of existing package managers. Thus Koinonia related files can be ignored/deleted.</p>
+<h2 id="what-needs-to-be-done-to-make-uframe-truly-alive-imho">What needs to be done to make uFrame truly alive (IMHO)</h2>
+<ul>
+<li>Get uFrame outside of Unity. uFrame was always half-way platform agnostic. It should not be too hard to place it inside Visual Studio as an extension or standalone app. Make sure to use Hardware GL for UI layer. Making it unity-agnostic will attract more users with diagram-code-gen needs.</li>
+<li>Implement good package management. This is critical, as we don’t want to end up with 100 frameworks/plugins inside single repo</li>
+<li>Rework diagram drawing. Unity editor GUI with it’s quirks affected UI layer a lot. Tons of hacks were placed inside the code to keep it platform-agnostic.</li>
+<li>Implement strong multitasking, to validate data ahead of time.</li>
+<li>Change how textures are stored: do not use bear pngs. Embed them inside dedicated DLL file and construct Unity textures on the fly. This will keep any texture related mess away from the user.</li>
+</ul>
+</idrawsomething></logincommand></logincommand></iloggedinevent>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
