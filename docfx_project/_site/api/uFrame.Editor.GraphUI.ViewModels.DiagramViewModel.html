@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DiagramViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DiagramViewModel
+   ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              
+              <h1 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel">Class DiagramViewModel
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ViewModel.html#uFrame_Editor_GraphUI_ViewModels_ViewModel">ViewModel</a></div>
+                  <div class="level2"><span class="xref">DiagramViewModel</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ViewModel.html#uFrame_Editor_GraphUI_ViewModels_ViewModel_DataObject">ViewModel.DataObject</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ViewModel.html#uFrame_Editor_GraphUI_ViewModels_ViewModel_Identifier">ViewModel.Identifier</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ViewModel.html#uFrame_Editor_GraphUI_ViewModels_ViewModel_SetProperty__1___0____0_System_String_">ViewModel.SetProperty&lt;T&gt;(T, T, String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ViewModel.html#uFrame_Editor_GraphUI_ViewModels_ViewModel_PropertyChanged">ViewModel.PropertyChanged</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ViewModel.html#uFrame_Editor_GraphUI_ViewModels_ViewModel_OnPropertyChanged_System_String_">ViewModel.OnPropertyChanged(String)</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:uFrame.Editor.GraphUI.ViewModels</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class DiagramViewModel : ViewModel, IDataRecordInserted, IDataRecordRemoved, IDataRecordPropertyChanged</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel__ctor_uFrame_Editor_Graphs_Data_IGraphData_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.%23ctor(uFrame.Editor.Graphs.Data.IGraphData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel__ctor_uFrame_Editor_Graphs_Data_IGraphData_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.#ctor(uFrame.Editor.Graphs.Data.IGraphData)">DiagramViewModel(IGraphData)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DiagramViewModel(IGraphData diagram)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IGraphData.html#uFrame_Editor_Graphs_Data_IGraphData">IGraphData</a></td>
+                    <td><em>diagram</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AllViewModels.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AllViewModels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AllViewModels" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AllViewModels">AllViewModels</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;GraphItemViewModel&gt; AllViewModels { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel.html#uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel">GraphItemViewModel</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_ContextObjects.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.ContextObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_ContextObjects" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.ContextObjects">ContextObjects</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;object&gt; ContextObjects { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_CurrentNodes.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.CurrentNodes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_CurrentNodes" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.CurrentNodes">CurrentNodes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IDiagramNode[] CurrentNodes { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNode.html#uFrame_Editor_Graphs_Data_IDiagramNode">IDiagramNode</a>[]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_CurrentRepository.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.CurrentRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_CurrentRepository" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.CurrentRepository">CurrentRepository</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IRepository CurrentRepository { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IRepository</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_DiagramBounds.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.DiagramBounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_DiagramBounds" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.DiagramBounds">DiagramBounds</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Rect DiagramBounds { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Rect</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Errors.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Errors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Errors" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Errors">Errors</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Exception Errors { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_FilterItems.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.FilterItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_FilterItems" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.FilterItems">FilterItems</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Dictionary&lt;string, IFilterItem&gt; FilterItems { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="uFrame.Editor.Graphs.Data.IFilterItem.html#uFrame_Editor_Graphs_Data_IFilterItem">IFilterItem</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_GraphData.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.GraphData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_GraphData" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.GraphData">GraphData</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IGraphData GraphData { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IGraphData.html#uFrame_Editor_Graphs_Data_IGraphData">IGraphData</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_GraphItems.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.GraphItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_GraphItems" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.GraphItems">GraphItems</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ObservableCollection&lt;GraphItemViewModel&gt; GraphItems { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ObservableCollection</span>&lt;<a class="xref" href="uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel.html#uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel">GraphItemViewModel</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_HasErrors.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.HasErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_HasErrors" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.HasErrors">HasErrors</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool HasErrors { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_InspectorViewModel.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.InspectorViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_InspectorViewModel" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.InspectorViewModel">InspectorViewModel</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public InspectorViewModel InspectorViewModel { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.GraphUI.ViewModels.InspectorViewModel.html#uFrame_Editor_GraphUI_ViewModels_InspectorViewModel">InspectorViewModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_IsLoading.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.IsLoading%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_IsLoading" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.IsLoading">IsLoading</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsLoading { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_LastMouseEvent.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.LastMouseEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_LastMouseEvent" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.LastMouseEvent">LastMouseEvent</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MouseEvent LastMouseEvent { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">MouseEvent</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NavigationViewModel.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NavigationViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NavigationViewModel" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NavigationViewModel">NavigationViewModel</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GraphDesignerNavigationViewModel NavigationViewModel { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.GraphUI.ViewModels.GraphDesignerNavigationViewModel.html#uFrame_Editor_GraphUI_ViewModels_GraphDesignerNavigationViewModel">GraphDesignerNavigationViewModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NeedsUpgrade.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NeedsUpgrade%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NeedsUpgrade" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NeedsUpgrade">NeedsUpgrade</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool NeedsUpgrade { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RefactorCount.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RefactorCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RefactorCount" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RefactorCount">RefactorCount</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int RefactorCount { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Scale.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Scale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Scale" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Scale">Scale</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public float Scale { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Single</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedGraphItem.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedGraphItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedGraphItem" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedGraphItem">SelectedGraphItem</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GraphItemViewModel SelectedGraphItem { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel.html#uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel">GraphItemViewModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedGraphItems.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedGraphItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedGraphItems" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedGraphItems">SelectedGraphItems</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;GraphItemViewModel&gt; SelectedGraphItems { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel.html#uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel">GraphItemViewModel</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedNode.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedNode" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedNode">SelectedNode</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DiagramNodeViewModel SelectedNode { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.GraphUI.ViewModels.DiagramNodeViewModel.html#uFrame_Editor_GraphUI_ViewModels_DiagramNodeViewModel">DiagramNodeViewModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedNodeItem.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedNodeItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedNodeItem" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedNodeItem">SelectedNodeItem</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GraphItemViewModel SelectedNodeItem { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel.html#uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel">GraphItemViewModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedNodeItems.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedNodeItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedNodeItems" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedNodeItems">SelectedNodeItems</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;GraphItemViewModel&gt; SelectedNodeItems { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel.html#uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel">GraphItemViewModel</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedNodes.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedNodes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SelectedNodes" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SelectedNodes">SelectedNodes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;DiagramNodeViewModel&gt; SelectedNodes { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.GraphUI.ViewModels.DiagramNodeViewModel.html#uFrame_Editor_GraphUI_ViewModels_DiagramNodeViewModel">DiagramNodeViewModel</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Settings.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Settings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Settings" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Settings">Settings</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ElementDiagramSettings Settings { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.GraphUI.ElementDiagramSettings.html#uFrame_Editor_GraphUI_ElementDiagramSettings">ElementDiagramSettings</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SnapSize.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SnapSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_SnapSize" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.SnapSize">SnapSize</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public float SnapSize { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Single</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Title.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Title" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Title">Title</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string Title { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_UseStraightLines.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.UseStraightLines%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_UseStraightLines" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.UseStraightLines">UseStraightLines</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool UseStraightLines { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AddConnectors_List_uFrame_Editor_GraphUI_ViewModels_ConnectorViewModel__.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AddConnectors(List%7BuFrame.Editor.GraphUI.ViewModels.ConnectorViewModel%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AddConnectors_List_uFrame_Editor_GraphUI_ViewModels_ConnectorViewModel__" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AddConnectors(List{uFrame.Editor.GraphUI.ViewModels.ConnectorViewModel})">AddConnectors(List&lt;ConnectorViewModel&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddConnectors(List&lt;ConnectorViewModel&gt; connectors)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ConnectorViewModel.html#uFrame_Editor_GraphUI_ViewModels_ConnectorViewModel">ConnectorViewModel</a>&gt;</td>
+                    <td><em>connectors</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AddGraphItems_IEnumerable_uFrame_Editor_Graphs_Data_IDiagramNode__.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AddGraphItems(IEnumerable%7BuFrame.Editor.Graphs.Data.IDiagramNode%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AddGraphItems_IEnumerable_uFrame_Editor_Graphs_Data_IDiagramNode__" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AddGraphItems(IEnumerable{uFrame.Editor.Graphs.Data.IDiagramNode})">AddGraphItems(IEnumerable&lt;IDiagramNode&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerator AddGraphItems(IEnumerable&lt;IDiagramNode&gt; items)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNode.html#uFrame_Editor_Graphs_Data_IDiagramNode">IDiagramNode</a>&gt;</td>
+                    <td><em>items</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerator</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AddNode_uFrame_Editor_Graphs_Data_IDiagramNode_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AddNode(uFrame.Editor.Graphs.Data.IDiagramNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AddNode_uFrame_Editor_Graphs_Data_IDiagramNode_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AddNode(uFrame.Editor.Graphs.Data.IDiagramNode)">AddNode(IDiagramNode)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public FilterItem AddNode(IDiagramNode newNodeData)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNode.html#uFrame_Editor_Graphs_Data_IDiagramNode">IDiagramNode</a></td>
+                    <td><em>newNodeData</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.FilterItem.html#uFrame_Editor_Graphs_Data_FilterItem">FilterItem</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AddNode_uFrame_Editor_Graphs_Data_IDiagramNode_Vector2_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AddNode(uFrame.Editor.Graphs.Data.IDiagramNode%2CVector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_AddNode_uFrame_Editor_Graphs_Data_IDiagramNode_Vector2_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.AddNode(uFrame.Editor.Graphs.Data.IDiagramNode,Vector2)">AddNode(IDiagramNode, Vector2)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public FilterItem AddNode(IDiagramNode newNodeData, Vector2 position)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNode.html#uFrame_Editor_Graphs_Data_IDiagramNode">IDiagramNode</a></td>
+                    <td><em>newNodeData</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><em>position</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.FilterItem.html#uFrame_Editor_Graphs_Data_FilterItem">FilterItem</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_ClearConnectors_List_uFrame_Editor_GraphUI_ViewModels_ConnectorViewModel__.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.ClearConnectors(List%7BuFrame.Editor.GraphUI.ViewModels.ConnectorViewModel%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_ClearConnectors_List_uFrame_Editor_GraphUI_ViewModels_ConnectorViewModel__" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.ClearConnectors(List{uFrame.Editor.GraphUI.ViewModels.ConnectorViewModel})">ClearConnectors(List&lt;ConnectorViewModel&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ClearConnectors(List&lt;ConnectorViewModel&gt; connectors)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ConnectorViewModel.html#uFrame_Editor_GraphUI_ViewModels_ConnectorViewModel">ConnectorViewModel</a>&gt;</td>
+                    <td><em>connectors</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_DataObjectChanged.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.DataObjectChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_DataObjectChanged" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.DataObjectChanged">DataObjectChanged()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void DataObjectChanged()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.GraphUI.ViewModels.ViewModel.html#uFrame_Editor_GraphUI_ViewModels_ViewModel_DataObjectChanged">DiagramViewModel.DataObjectChanged()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_DeselectAll.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.DeselectAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_DeselectAll" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.DeselectAll">DeselectAll()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void DeselectAll()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_GetColor_uFrame_Editor_Graphs_Data_IGraphItem_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.GetColor(uFrame.Editor.Graphs.Data.IGraphItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_GetColor_uFrame_Editor_Graphs_Data_IGraphItem_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.GetColor(uFrame.Editor.Graphs.Data.IGraphItem)">GetColor(IGraphItem)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Color GetColor(IGraphItem dataObject)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IGraphItem.html#uFrame_Editor_Graphs_Data_IGraphItem">IGraphItem</a></td>
+                    <td><em>dataObject</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_GetImportableItems.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.GetImportableItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_GetImportableItems" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.GetImportableItems">GetImportableItems()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;IDiagramNode&gt; GetImportableItems()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNode.html#uFrame_Editor_Graphs_Data_IDiagramNode">IDiagramNode</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Invalidate.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Invalidate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Invalidate" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Invalidate">Invalidate()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Invalidate()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Load_System_Boolean_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Load(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Load_System_Boolean_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Load(System.Boolean)">Load(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Load(bool async = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>async</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_MarkDirty.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.MarkDirty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_MarkDirty" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.MarkDirty">MarkDirty()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void MarkDirty()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Navigate.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Navigate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Navigate" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Navigate">Navigate()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Navigate()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NavigateByName_System_String_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NavigateByName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NavigateByName_System_String_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NavigateByName(System.String)">NavigateByName(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void NavigateByName(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NavigateTo_System_String_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NavigateTo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NavigateTo_System_String_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NavigateTo(System.String)">NavigateTo(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void NavigateTo(string identifier)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>identifier</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NavigateTo_uFrame_Editor_Graphs_Data_IDiagramNode_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NavigateTo(uFrame.Editor.Graphs.Data.IDiagramNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NavigateTo_uFrame_Editor_Graphs_Data_IDiagramNode_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NavigateTo(uFrame.Editor.Graphs.Data.IDiagramNode)">NavigateTo(IDiagramNode)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void NavigateTo(IDiagramNode node)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNode.html#uFrame_Editor_Graphs_Data_IDiagramNode">IDiagramNode</a></td>
+                    <td><em>node</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NothingSelected.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NothingSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_NothingSelected" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.NothingSelected">NothingSelected()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void NothingSelected()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_PropertyChanged_IDataRecord_System_String_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.PropertyChanged(IDataRecord%2CSystem.String%2CSystem.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_PropertyChanged_IDataRecord_System_String_System_Object_System_Object_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.PropertyChanged(IDataRecord,System.String,System.Object,System.Object)">PropertyChanged(IDataRecord, String, Object, Object)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PropertyChanged(IDataRecord record, string name, object previousValue, object nextValue)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IDataRecord</span></td>
+                    <td><em>record</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>previousValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>nextValue</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RecordInserted_IDataRecord_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RecordInserted(IDataRecord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RecordInserted_IDataRecord_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RecordInserted(IDataRecord)">RecordInserted(IDataRecord)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RecordInserted(IDataRecord record)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IDataRecord</span></td>
+                    <td><em>record</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RecordRemoved_IDataRecord_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RecordRemoved(IDataRecord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RecordRemoved_IDataRecord_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RecordRemoved(IDataRecord)">RecordRemoved(IDataRecord)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RecordRemoved(IDataRecord record)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IDataRecord</span></td>
+                    <td><em>record</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RecordUndo_System_String_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RecordUndo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RecordUndo_System_String_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RecordUndo(System.String)">RecordUndo(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RecordUndo(string title)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>title</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RefreshConnectors.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RefreshConnectors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_RefreshConnectors" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.RefreshConnectors">RefreshConnectors()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RefreshConnectors()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Save.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Save" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Save">Save()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Save()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Select_uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Select(uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_Select_uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel_" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.Select(uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel)">Select(GraphItemViewModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Select(GraphItemViewModel viewModelObject)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.GraphUI.ViewModels.GraphItemViewModel.html#uFrame_Editor_GraphUI_ViewModels_GraphItemViewModel">GraphItemViewModel</a></td>
+                    <td><em>viewModelObject</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_ShowContainerDebug.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.ShowContainerDebug%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_ShowContainerDebug" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.ShowContainerDebug">ShowContainerDebug()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ShowContainerDebug()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_ShowQuickAdd.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.ShowQuickAdd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_ShowQuickAdd" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.ShowQuickAdd">ShowQuickAdd()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ShowQuickAdd()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_UpgradeProject.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.UpgradeProject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_ViewModels_DiagramViewModel_UpgradeProject" data-uid="uFrame.Editor.GraphUI.ViewModels.DiagramViewModel.UpgradeProject">UpgradeProject()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UpgradeProject()</code></pre>
+              </div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

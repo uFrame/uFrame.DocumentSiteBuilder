@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class uFrameComponent
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class uFrameComponent
+   ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              
+              <h1 id="uFrame_Kernel_uFrameComponent" data-uid="uFrame.Kernel.uFrameComponent">Class uFrameComponent
+              </h1>
+              <div class="markdown level0 summary"><p>The uFrameComponent is a simple class that extends from MonoBehaviour, and is directly plugged into the kernel.
+Use this component when creating any components manually or if you need to plug existing libraries into the uFrame system.</p>
+<example>
+public class MyComponent : uFrameComponent {
+}
+</example></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">uFrameComponent</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:uFrame.Kernel</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="uFrame_Kernel_uFrameComponent_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class uFrameComponent : MonoBehaviour, IDisposableContainer</code></pre>
+              </div>
+              <h5 id="uFrame_Kernel_uFrameComponent_examples"><strong>Examples</strong></h5>
+              
+<p>public class MyComponent : uFrameComponent {</p>
+<p>      public override void KernelLoaded() {</p>
+<p>             this.Publish(new MyComponentCreatedEvent() { Instance = this });</p>
+<p>      }</p>
+<p>}</p>
+
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent_EventAggregator.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent.EventAggregator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_uFrameComponent_EventAggregator" data-uid="uFrame.Kernel.uFrameComponent.EventAggregator">EventAggregator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IEventAggregator EventAggregator { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.IEventAggregator.html#uFrame_Kernel_IEventAggregator">IEventAggregator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="uFrame_Kernel_uFrameComponent_EventAggregator_examples">Examples</h5>
+              
+<p>public class MyComponent : uFrameComponent {</p>
+<p>      public override void KernelLoaded() {</p>
+<p>             this.Publish(new MyComponentCreatedEvent() { Instance = this });</p>
+<p>      }</p>
+<p>}</p>
+
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent_KernelLoaded.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent.KernelLoaded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_uFrameComponent_KernelLoaded" data-uid="uFrame.Kernel.uFrameComponent.KernelLoaded">KernelLoaded()</h4>
+              <div class="markdown level1 summary"><p>The first method to execute when we are sure the kernel has completed loading.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void KernelLoaded()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent_KernelLoading.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent.KernelLoading%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_uFrameComponent_KernelLoading" data-uid="uFrame.Kernel.uFrameComponent.KernelLoading">KernelLoading()</h4>
+              <div class="markdown level1 summary"><p>Before we wait for the kernel to load, even if the kernel is already loaded it will still invoke this before it attempts to wait.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void KernelLoading()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent_OnDestroy.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent.OnDestroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_uFrameComponent_OnDestroy" data-uid="uFrame.Kernel.uFrameComponent.OnDestroy">OnDestroy()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void OnDestroy()</code></pre>
+              </div>
+              <h5 id="uFrame_Kernel_uFrameComponent_OnDestroy_examples">Examples</h5>
+              
+<p>public class MyComponent : uFrameComponent {</p>
+<p>      public override void KernelLoaded() {</p>
+<p>             this.Publish(new MyComponentCreatedEvent() { Instance = this });</p>
+<p>      }</p>
+<p>}</p>
+
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent_OnEvent__1.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent.OnEvent%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_uFrameComponent_OnEvent__1" data-uid="uFrame.Kernel.uFrameComponent.OnEvent``1">OnEvent&lt;TEvent&gt;()</h4>
+              <div class="markdown level1 summary"><p>Wait for an Event to occur on the global event aggregator.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IObservable&lt;TEvent&gt; OnEvent&lt;TEvent&gt;()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;TEvent&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TEvent</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="uFrame_Kernel_uFrameComponent_OnEvent__1_examples">Examples</h5>
+              
+this.OnEvent<myeventclass>().Subscribe(myEventClassInstance=>{ DO_SOMETHING_HERE });
+
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent_Publish_System_Object_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent.Publish(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_uFrameComponent_Publish_System_Object_" data-uid="uFrame.Kernel.uFrameComponent.Publish(System.Object)">Publish(Object)</h4>
+              <div class="markdown level1 summary"><p>Publishes a command to the event aggregator. Publish the class data you want, and let any &quot;OnEvent&quot; subscriptions handle them.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Publish(object eventMessage)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>eventMessage</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="uFrame_Kernel_uFrameComponent_Publish_System_Object__examples">Examples</h5>
+              
+this.Publish(new MyEventClass() { Message = "Hello World" });
+
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent_Start.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_uFrameComponent_Start" data-uid="uFrame.Kernel.uFrameComponent.Start">Start()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+              </div>
+              <h5 id="uFrame_Kernel_uFrameComponent_Start_examples">Examples</h5>
+              
+<p>public class MyComponent : uFrameComponent {</p>
+<p>      public override void KernelLoaded() {</p>
+<p>             this.Publish(new MyComponentCreatedEvent() { Instance = this });</p>
+<p>      }</p>
+<p>}</p>
+
+              <h3 id="eii">Explicit Interface Implementations
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_uFrameComponent_uFrame_Kernel_IDisposableContainer_Disposer.md&amp;value=---%0Auid%3A%20uFrame.Kernel.uFrameComponent.uFrame%23Kernel%23IDisposableContainer%23Disposer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_uFrameComponent_uFrame_Kernel_IDisposableContainer_Disposer" data-uid="uFrame.Kernel.uFrameComponent.uFrame#Kernel#IDisposableContainer#Disposer">IDisposableContainer.Disposer</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">CompositeDisposable IDisposableContainer.Disposer { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">CompositeDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="uFrame.Kernel.IDisposableContainer.html#uFrame_Kernel_IDisposableContainer_Disposer">uFrameComponent.IDisposableContainer.Disposer</a></div>
+              <h5 id="uFrame_Kernel_uFrameComponent_uFrame_Kernel_IDisposableContainer_Disposer_examples">Examples</h5>
+              
+<p>public class MyComponent : uFrameComponent {</p>
+<p>      public override void KernelLoaded() {</p>
+<p>             this.Publish(new MyComponentCreatedEvent() { Instance = this });</p>
+<p>      }</p>
+<p>}</p>
+
+            </myeventclass></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

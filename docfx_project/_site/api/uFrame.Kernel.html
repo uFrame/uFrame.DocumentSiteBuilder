@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace uFrame.Kernel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace uFrame.Kernel
+   ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel.md&amp;value=---%0Auid%3A%20uFrame.Kernel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <h1 id="uFrame_Kernel" data-uid="uFrame.Kernel">Namespace uFrame.Kernel
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes
+              </h3>
+                  <h4><a class="xref" href="uFrame.Kernel.DefaultSceneLoader.html#uFrame_Kernel_DefaultSceneLoader">DefaultSceneLoader</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.DisposableContainerExtensions.html#uFrame_Kernel_DisposableContainerExtensions">DisposableContainerExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.EcsEventAggregator.html#uFrame_Kernel_EcsEventAggregator">EcsEventAggregator</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.EventAggregator.html#uFrame_Kernel_EventAggregator">EventAggregator</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.EventManager-1.html#uFrame_Kernel_EventManager_1">EventManager</a>&lt;TEventType&gt;</h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.GameReadyEvent.html#uFrame_Kernel_GameReadyEvent">GameReadyEvent</a></h4>
+                  <section><p>The game ready event is invoked after the kernel has loaded and two addditional frames have occured.</p>
+</section>
+                  <h4><a class="xref" href="uFrame.Kernel.KernelLoadedEvent.html#uFrame_Kernel_KernelLoadedEvent">KernelLoadedEvent</a></h4>
+                  <section><p>This is invoked directly after all scenes of </p>
+</section>
+                  <h4><a class="xref" href="uFrame.Kernel.LoadSceneCommand.html#uFrame_Kernel_LoadSceneCommand">LoadSceneCommand</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.Scene.html#uFrame_Kernel_Scene">Scene</a></h4>
+                  <section><p>The scene class is used to define a scene as a class, 
+this MonoBehaviour should live on a gameobject that is at the root level of the scene it is defining.
+When this type is loaded by unity, it will publish the SceneAwakeEvent.  The SceneManagementService (part of the kernel) will
+then find the scene loader associated with this scene and invoke its Load Co-Routine method.</p>
+</section>
+                  <h4><a class="xref" href="uFrame.Kernel.SceneAwakeEvent.html#uFrame_Kernel_SceneAwakeEvent">SceneAwakeEvent</a></h4>
+                  <section><p>This class is used internally by the Scene class and the kernel to trigger scene loaders load method.</p>
+</section>
+                  <h4><a class="xref" href="uFrame.Kernel.SceneLoader-1.html#uFrame_Kernel_SceneLoader_1">SceneLoader</a>&lt;T&gt;</h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SceneLoaderEvent.html#uFrame_Kernel_SceneLoaderEvent">SceneLoaderEvent</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SceneManagementService.html#uFrame_Kernel_SceneManagementService">SceneManagementService</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SceneQueueItem.html#uFrame_Kernel_SceneQueueItem">SceneQueueItem</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SceneSettings-1.html#uFrame_Kernel_SceneSettings_1">SceneSettings</a>&lt;T&gt;</h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.ServiceLoaderEvent.html#uFrame_Kernel_ServiceLoaderEvent">ServiceLoaderEvent</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SimpleSubject-1.html#uFrame_Kernel_SimpleSubject_1">SimpleSubject</a>&lt;T&gt;</h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SystemControllerExtensions.html#uFrame_Kernel_SystemControllerExtensions">SystemControllerExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SystemLoader.html#uFrame_Kernel_SystemLoader">SystemLoader</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SystemLoaderEvent.html#uFrame_Kernel_SystemLoaderEvent">SystemLoaderEvent</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SystemService.html#uFrame_Kernel_SystemService">SystemService</a></h4>
+                  <section><p>This class is a generic base class for a systemservice, your probably looking for SystemServiceMonoBehaviour.</p>
+</section>
+                  <h4><a class="xref" href="uFrame.Kernel.SystemServiceMonoBehavior.html#uFrame_Kernel_SystemServiceMonoBehavior">SystemServiceMonoBehavior</a></h4>
+                  <section><p>The base class for all services on the kernel.  Services provide an easy communication layer with the use
+of the EventAggregator.  You can use this.Publish(new AnyType()).  Or you can use this.OnEvent<anytype>().Subscribe(anyTypeInstance=&gt;{ });
+In services you can also inject any instances that are setup in any of the SystemLoaders.<p>
+</anytype></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SystemsLoadedEvent.html#uFrame_Kernel_SystemsLoadedEvent">SystemsLoadedEvent</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.uFrameComponent.html#uFrame_Kernel_uFrameComponent">uFrameComponent</a></h4>
+                  <section><p>The uFrameComponent is a simple class that extends from MonoBehaviour, and is directly plugged into the kernel.
+Use this component when creating any components manually or if you need to plug existing libraries into the uFrame system.</p>
+<example>
+public class MyComponent : uFrameComponent {
+}
+</example></section>
+                  <h4><a class="xref" href="uFrame.Kernel.uFrameKernel.html#uFrame_Kernel_uFrameKernel">uFrameKernel</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.uFrameKernelExtensions.html#uFrame_Kernel_uFrameKernelExtensions">uFrameKernelExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.uFrameMVVMKernel.html#uFrame_Kernel_uFrameMVVMKernel">uFrameMVVMKernel</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.uFrameNetworkComponent.html#uFrame_Kernel_uFrameNetworkComponent">uFrameNetworkComponent</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.UnloadSceneCommand.html#uFrame_Kernel_UnloadSceneCommand">UnloadSceneCommand</a></h4>
+                  <section></section>
+                <h3 id="interfaces">Interfaces
+              </h3>
+                  <h4><a class="xref" href="uFrame.Kernel.IDisposableContainer.html#uFrame_Kernel_IDisposableContainer">IDisposableContainer</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.IEventAggregator.html#uFrame_Kernel_IEventAggregator">IEventAggregator</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.IEventManager.html#uFrame_Kernel_IEventManager">IEventManager</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.IScene.html#uFrame_Kernel_IScene">IScene</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.ISceneLoader.html#uFrame_Kernel_ISceneLoader">ISceneLoader</a></h4>
+                  <section><p>The Scene Loader is used to manage loading and unloading a scene, it is part of the kernel and is always available,
+this makes sure that whenever you want to load a scene, you have complete control over it very easily.</p>
+</section>
+                  <h4><a class="xref" href="uFrame.Kernel.ISceneSettings.html#uFrame_Kernel_ISceneSettings">ISceneSettings</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.ISystemLoader.html#uFrame_Kernel_ISystemLoader">ISystemLoader</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.ISystemService.html#uFrame_Kernel_ISystemService">ISystemService</a></h4>
+                  <section></section>
+                <h3 id="enums">Enums
+              </h3>
+                  <h4><a class="xref" href="uFrame.Kernel.SceneState.html#uFrame_Kernel_SceneState">SceneState</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.ServiceState.html#uFrame_Kernel_ServiceState">ServiceState</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="uFrame.Kernel.SystemState.html#uFrame_Kernel_SystemState">SystemState</a></h4>
+                  <section></section>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

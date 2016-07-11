@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GenericNodeGenerator&lt;TData&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GenericNodeGenerator&lt;TData&gt;
+   ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              
+              <h1 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1">Class GenericNodeGenerator&lt;TData&gt;
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="uFrame.Editor.Compiling.CodeGen.OutputGenerator.html#uFrame_Editor_Compiling_CodeGen_OutputGenerator">OutputGenerator</a></div>
+                  <div class="level2"><a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator">CodeGenerator</a></div>
+                  <div class="level3"><span class="xref">GenericNodeGenerator&lt;TData&gt;</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_DoesTypeExist_FileInfo_">CodeGenerator.DoesTypeExist(FileInfo)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_IsValid">CodeGenerator.IsValid()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_TryAddNamespace_System_String_">CodeGenerator.TryAddNamespace(String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_RelatedType">CodeGenerator.RelatedType</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_Namespace">CodeGenerator.Namespace</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_Unit">CodeGenerator.Unit</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_IsDesignerFile">CodeGenerator.IsDesignerFile</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_ProcessModifiers_CodeTypeDeclaration_">CodeGenerator.ProcessModifiers(CodeTypeDeclaration)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.OutputGenerator.html#uFrame_Editor_Compiling_CodeGen_OutputGenerator_Filename">OutputGenerator.Filename</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.OutputGenerator.html#uFrame_Editor_Compiling_CodeGen_OutputGenerator_ObjectData">OutputGenerator.ObjectData</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.OutputGenerator.html#uFrame_Editor_Compiling_CodeGen_OutputGenerator_AssetDirectory">OutputGenerator.AssetDirectory</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.OutputGenerator.html#uFrame_Editor_Compiling_CodeGen_OutputGenerator_FullPathName">OutputGenerator.FullPathName</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.OutputGenerator.html#uFrame_Editor_Compiling_CodeGen_OutputGenerator_RelativeFullPathName">OutputGenerator.RelativeFullPathName</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Compiling.CodeGen.OutputGenerator.html#uFrame_Editor_Compiling_CodeGen_OutputGenerator_AlwaysRegenerate">OutputGenerator.AlwaysRegenerate</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:uFrame.Editor.Compiling.CodeGen</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class GenericNodeGenerator&lt;TData&gt; : CodeGenerator where TData : GenericNode</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TData</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_Data.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.Data%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_Data" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.Data">Data</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TData Data { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TData</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_Decleration.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.Decleration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_Decleration" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.Decleration">Decleration</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CodeTypeDeclaration Decleration { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">CodeTypeDeclaration</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_GeneratorConfig.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.GeneratorConfig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_GeneratorConfig" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.GeneratorConfig">GeneratorConfig</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public NodeGeneratorConfig&lt;TData&gt; GeneratorConfig { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Configurations.NodeGeneratorConfig-1.html#uFrame_Editor_Configurations_NodeGeneratorConfig_1">NodeGeneratorConfig</a>&lt;TData&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_GeneratorFor.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.GeneratorFor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_GeneratorFor" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.GeneratorFor">GeneratorFor</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override Type GeneratorFor { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Compiling.CodeGen.OutputGenerator.html#uFrame_Editor_Compiling_CodeGen_OutputGenerator_GeneratorFor">GenericNodeGenerator&lt;TData&gt;.GeneratorFor</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_NameAsClass.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.NameAsClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_NameAsClass" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.NameAsClass">NameAsClass</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string NameAsClass { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_NameAsDesignerClass.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.NameAsDesignerClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_NameAsDesignerClass" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.NameAsDesignerClass">NameAsDesignerClass</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string NameAsDesignerClass { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_AddMember_uFrame_Editor_Compiling_CodeGen_IMemberGenerator_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.AddMember(uFrame.Editor.Compiling.CodeGen.IMemberGenerator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_AddMember_uFrame_Editor_Compiling_CodeGen_IMemberGenerator_" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.AddMember(uFrame.Editor.Compiling.CodeGen.IMemberGenerator)">AddMember(IMemberGenerator)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddMember(IMemberGenerator generator)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Compiling.CodeGen.IMemberGenerator.html#uFrame_Editor_Compiling_CodeGen_IMemberGenerator">IMemberGenerator</a></td>
+                    <td><em>generator</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_AddMember__1_System_Func__0___0__uFrame_Editor_Compiling_CodeGen_IMemberGenerator_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.AddMember%60%601(System.Func%7B%600%2C%60%600%7D%2CuFrame.Editor.Compiling.CodeGen.IMemberGenerator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_AddMember__1_System_Func__0___0__uFrame_Editor_Compiling_CodeGen_IMemberGenerator_" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.AddMember``1(System.Func{`0,``0},uFrame.Editor.Compiling.CodeGen.IMemberGenerator)">AddMember&lt;TFor&gt;(Func&lt;TData, TFor&gt;, IMemberGenerator)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddMember&lt;TFor&gt;(Func&lt;TData, TFor&gt; selector, IMemberGenerator generator)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;TData, TFor&gt;</td>
+                    <td><em>selector</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Compiling.CodeGen.IMemberGenerator.html#uFrame_Editor_Compiling_CodeGen_IMemberGenerator">IMemberGenerator</a></td>
+                    <td><em>generator</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TFor</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_AddMembers__1_System_Func__0_IEnumerable___0___uFrame_Editor_Compiling_CodeGen_IMemberGenerator_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.AddMembers%60%601(System.Func%7B%600%2CIEnumerable%7B%60%600%7D%7D%2CuFrame.Editor.Compiling.CodeGen.IMemberGenerator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_AddMembers__1_System_Func__0_IEnumerable___0___uFrame_Editor_Compiling_CodeGen_IMemberGenerator_" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.AddMembers``1(System.Func{`0,IEnumerable{``0}},uFrame.Editor.Compiling.CodeGen.IMemberGenerator)">AddMembers&lt;TFor&gt;(Func&lt;TData, IEnumerable&lt;TFor&gt;&gt;, IMemberGenerator)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddMembers&lt;TFor&gt;(Func&lt;TData, IEnumerable&lt;TFor&gt;&gt; selector, IMemberGenerator generator)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;TData, <span class="xref">IEnumerable</span>&lt;TFor&gt;&gt;</td>
+                    <td><em>selector</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Compiling.CodeGen.IMemberGenerator.html#uFrame_Editor_Compiling_CodeGen_IMemberGenerator">IMemberGenerator</a></td>
+                    <td><em>generator</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TFor</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_AddMethod_CodeMemberMethod_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.AddMethod(CodeMemberMethod)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_AddMethod_CodeMemberMethod_" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.AddMethod(CodeMemberMethod)">AddMethod(CodeMemberMethod)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddMethod(CodeMemberMethod method)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">CodeMemberMethod</span></td>
+                    <td><em>method</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_Compose.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.Compose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_Compose" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.Compose">Compose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Compose()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_Initialize_uFrame_Editor_Compiling_CodeGen_CodeFileGenerator_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.Initialize(uFrame.Editor.Compiling.CodeGen.CodeFileGenerator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_Initialize_uFrame_Editor_Compiling_CodeGen_CodeFileGenerator_" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.Initialize(uFrame.Editor.Compiling.CodeGen.CodeFileGenerator)">Initialize(CodeFileGenerator)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Initialize(CodeFileGenerator codeFileGenerator)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeFileGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeFileGenerator">CodeFileGenerator</a></td>
+                    <td><em>codeFileGenerator</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Compiling.CodeGen.CodeGenerator.html#uFrame_Editor_Compiling_CodeGen_CodeGenerator_Initialize_uFrame_Editor_Compiling_CodeGen_CodeFileGenerator_">GenericNodeGenerator&lt;TData&gt;.Initialize(CodeFileGenerator)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_InitializeDesignerFile.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.InitializeDesignerFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_InitializeDesignerFile" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.InitializeDesignerFile">InitializeDesignerFile()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void InitializeDesignerFile()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_InitializeEditableFile.md&amp;value=---%0Auid%3A%20uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator%601.InitializeEditableFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Compiling_CodeGen_GenericNodeGenerator_1_InitializeEditableFile" data-uid="uFrame.Editor.Compiling.CodeGen.GenericNodeGenerator`1.InitializeEditableFile">InitializeEditableFile()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void InitializeEditableFile()</code></pre>
+              </div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

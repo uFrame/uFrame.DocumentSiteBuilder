@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ViewBindings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ViewBindings
+   ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              
+              <h1 id="uFrame_MVVM_Bindings_ViewBindings" data-uid="uFrame.MVVM.Bindings.ViewBindings">Class ViewBindings
+              </h1>
+              <div class="markdown level0 summary"><p>Binding extension methods that make it easy to bind ViewModels to Views, Any method that starts with Bind{...} will properly be unbound when a view is destroyed, if not
+it is the developers repsonsibility to properly dispose any subscriptions using the returned IDisposable.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">ViewBindings</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:uFrame.MVVM.Bindings</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="uFrame_MVVM_Bindings_ViewBindings_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ViewBindings</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindCollection__1_uFrame_MVVM_Bindings_IBindable_ModelCollection___0__System_Action___0__System_Action___0__.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindCollection%60%601(uFrame.MVVM.Bindings.IBindable%2CModelCollection%7B%60%600%7D%2CSystem.Action%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindCollection__1_uFrame_MVVM_Bindings_IBindable_ModelCollection___0__System_Action___0__System_Action___0__" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindCollection``1(uFrame.MVVM.Bindings.IBindable,ModelCollection{``0},System.Action{``0},System.Action{``0})">BindCollection&lt;TCollectionItemType&gt;(IBindable, ModelCollection&lt;TCollectionItemType&gt;, Action&lt;TCollectionItemType&gt;, Action&lt;TCollectionItemType&gt;)</h4>
+              <div class="markdown level1 summary"><p>Bind to a ViewModel collection.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static ModelCollectionBinding&lt;TCollectionItemType&gt; BindCollection&lt;TCollectionItemType&gt;(this IBindable t, ModelCollection&lt;TCollectionItemType&gt; collection, Action&lt;TCollectionItemType&gt; onAdd, Action&lt;TCollectionItemType&gt; onRemove)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.IBindable.html#uFrame_MVVM_Bindings_IBindable">IBindable</a></td>
+                    <td><em>t</em></td>
+                    <td><p>This</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">ModelCollection</span>&lt;TCollectionItemType&gt;</td>
+                    <td><em>collection</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TCollectionItemType&gt;</td>
+                    <td><em>onAdd</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TCollectionItemType&gt;</td>
+                    <td><em>onRemove</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.ModelCollectionBinding-1.html#uFrame_MVVM_Bindings_ModelCollectionBinding_1">ModelCollectionBinding</a>&lt;TCollectionItemType&gt;</td>
+                    <td><p>The binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TCollectionItemType</em></td>
+                    <td>The type that the collection contains.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindCollection__1_ViewBase_System_Func_ModelCollection___0___.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindCollection%60%601(ViewBase%2CSystem.Func%7BModelCollection%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindCollection__1_ViewBase_System_Func_ModelCollection___0___" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindCollection``1(ViewBase,System.Func{ModelCollection{``0}})">BindCollection&lt;TCollectionItemType&gt;(ViewBase, Func&lt;ModelCollection&lt;TCollectionItemType&gt;&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[Obsolete]
+public static ModelCollectionBinding&lt;TCollectionItemType&gt; BindCollection&lt;TCollectionItemType&gt;(this ViewBase t, Func&lt;ModelCollection&lt;TCollectionItemType&gt;&gt; collectionSelector)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>t</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<span class="xref">ModelCollection</span>&lt;TCollectionItemType&gt;&gt;</td>
+                    <td><em>collectionSelector</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.ModelCollectionBinding-1.html#uFrame_MVVM_Bindings_ModelCollectionBinding_1">ModelCollectionBinding</a>&lt;TCollectionItemType&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TCollectionItemType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindCollision_ViewBase_uFrame_MVVM_Bindings_CollisionEventType_System_Action_Collision__.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindCollision(ViewBase%2CuFrame.MVVM.Bindings.CollisionEventType%2CSystem.Action%7BCollision%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindCollision_ViewBase_uFrame_MVVM_Bindings_CollisionEventType_System_Action_Collision__" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindCollision(ViewBase,uFrame.MVVM.Bindings.CollisionEventType,System.Action{Collision})">BindCollision(ViewBase, CollisionEventType, Action&lt;Collision&gt;)</h4>
+              <div class="markdown level1 summary"><p>Adds a binding to a collision, when the collusion occurs the call back will be invoked.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindCollision(this ViewBase t, CollisionEventType eventType, Action&lt;Collision&gt; action)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>t</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;<span class="xref">Collision</span>&gt;</td>
+                    <td><em>action</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindCommandExecuted__1_ViewBase_Signal___0__System_Action___0__.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindCommandExecuted%60%601(ViewBase%2CSignal%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindCommandExecuted__1_ViewBase_Signal___0__System_Action___0__" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindCommandExecuted``1(ViewBase,Signal{``0},System.Action{``0})">BindCommandExecuted&lt;TCommandType&gt;(ViewBase, Signal&lt;TCommandType&gt;, Action&lt;TCommandType&gt;)</h4>
+              <div class="markdown level1 summary"><p>Binds to a commands execution and is diposed with the bindable</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindCommandExecuted&lt;TCommandType&gt;(this ViewBase bindable, Signal&lt;TCommandType&gt; sourceCommand, Action&lt;TCommandType&gt; executed)where TCommandType : ViewModelCommand, new ()</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>bindable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Signal</span>&lt;TCommandType&gt;</td>
+                    <td><em>sourceCommand</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TCommandType&gt;</td>
+                    <td><em>executed</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TCommandType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindEnum__1_uFrame_MVVM_Bindings_IBindable_P___0__System_Action___0__System_Action___0__.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindEnum%60%601(uFrame.MVVM.Bindings.IBindable%2CP%7B%60%600%7D%2CSystem.Action%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindEnum__1_uFrame_MVVM_Bindings_IBindable_P___0__System_Action___0__System_Action___0__" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindEnum``1(uFrame.MVVM.Bindings.IBindable,P{``0},System.Action{``0},System.Action{``0})">BindEnum&lt;TBindingType&gt;(IBindable, P&lt;TBindingType&gt;, Action&lt;TBindingType&gt;, Action&lt;TBindingType&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindEnum&lt;TBindingType&gt;(this IBindable bindable, P&lt;TBindingType&gt; property, Action&lt;TBindingType&gt; enumChanged, Action&lt;TBindingType&gt; enumChanged2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.IBindable.html#uFrame_MVVM_Bindings_IBindable">IBindable</a></td>
+                    <td><em>bindable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">P</span>&lt;TBindingType&gt;</td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TBindingType&gt;</td>
+                    <td><em>enumChanged</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TBindingType&gt;</td>
+                    <td><em>enumChanged2</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TBindingType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindKey__1_ViewBase_Signal___0__KeyCode___0_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindKey%60%601(ViewBase%2CSignal%7B%60%600%7D%2CKeyCode%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindKey__1_ViewBase_Signal___0__KeyCode___0_" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindKey``1(ViewBase,Signal{``0},KeyCode,``0)">BindKey&lt;TCommandType&gt;(ViewBase, Signal&lt;TCommandType&gt;, KeyCode, TCommandType)</h4>
+              <div class="markdown level1 summary"><p>Bind a key to a ViewModel Command</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindKey&lt;TCommandType&gt;(this ViewBase t, Signal&lt;TCommandType&gt; commandSelector, KeyCode key, TCommandType parameter = null)where TCommandType : ViewModelCommand, new ()</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>t</em></td>
+                    <td><p>The view that owns the binding</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Signal</span>&lt;TCommandType&gt;</td>
+                    <td><em>commandSelector</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">KeyCode</span></td>
+                    <td><em>key</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">TCommandType</span></td>
+                    <td><em>parameter</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td><p>The binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TCommandType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindProperty__1_uFrame_MVVM_Bindings_IBindable_P___0__System_Action___0__System_Boolean_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindProperty%60%601(uFrame.MVVM.Bindings.IBindable%2CP%7B%60%600%7D%2CSystem.Action%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindProperty__1_uFrame_MVVM_Bindings_IBindable_P___0__System_Action___0__System_Boolean_" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindProperty``1(uFrame.MVVM.Bindings.IBindable,P{``0},System.Action{``0},System.Boolean)">BindProperty&lt;TBindingType&gt;(IBindable, P&lt;TBindingType&gt;, Action&lt;TBindingType&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Binds a property to a view, this is the standard property binding extension method.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindProperty&lt;TBindingType&gt;(this IBindable bindable, P&lt;TBindingType&gt; property, Action&lt;TBindingType&gt; changed, bool onlyWhenChanged = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.IBindable.html#uFrame_MVVM_Bindings_IBindable">IBindable</a></td>
+                    <td><em>bindable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">P</span>&lt;TBindingType&gt;</td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TBindingType&gt;</td>
+                    <td><em>changed</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>onlyWhenChanged</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TBindingType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindProperty__1_uFrame_MVVM_Bindings_IBindable_System_Func_P___0___System_Action___0__.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindProperty%60%601(uFrame.MVVM.Bindings.IBindable%2CSystem.Func%7BP%7B%60%600%7D%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindProperty__1_uFrame_MVVM_Bindings_IBindable_System_Func_P___0___System_Action___0__" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindProperty``1(uFrame.MVVM.Bindings.IBindable,System.Func{P{``0}},System.Action{``0})">BindProperty&lt;TBindingType&gt;(IBindable, Func&lt;P&lt;TBindingType&gt;&gt;, Action&lt;TBindingType&gt;)</h4>
+              <div class="markdown level1 summary"><p>The binding class that allows chaining extra options.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use other overload without function selector.&quot;)]
+public static IDisposable BindProperty&lt;TBindingType&gt;(this IBindable bindable, Func&lt;P&lt;TBindingType&gt;&gt; sourceProperty, Action&lt;TBindingType&gt; targetSetter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.IBindable.html#uFrame_MVVM_Bindings_IBindable">IBindable</a></td>
+                    <td><em>bindable</em></td>
+                    <td><p>The view that owns the binding</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<span class="xref">P</span>&lt;TBindingType&gt;&gt;</td>
+                    <td><em>sourceProperty</em></td>
+                    <td><p>The ViewModel property to bind to. Ex. ()=&gt;Model.MyViewModelProperty</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TBindingType&gt;</td>
+                    <td><em>targetSetter</em></td>
+                    <td><p>Should set the value of the target.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td><p>The binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TBindingType</em></td>
+                    <td>The type of the model property to bind to.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindStateProperty__1_uFrame_MVVM_Bindings_IBindable_P___0__System_Action___0__System_Boolean_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindStateProperty%60%601(uFrame.MVVM.Bindings.IBindable%2CP%7B%60%600%7D%2CSystem.Action%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindStateProperty__1_uFrame_MVVM_Bindings_IBindable_P___0__System_Action___0__System_Boolean_" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindStateProperty``1(uFrame.MVVM.Bindings.IBindable,P{``0},System.Action{``0},System.Boolean)">BindStateProperty&lt;TBindingType&gt;(IBindable, P&lt;TBindingType&gt;, Action&lt;TBindingType&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>A wrapper of BindProperty for bindings in the diagram</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindStateProperty&lt;TBindingType&gt;(this IBindable bindable, P&lt;TBindingType&gt; property, Action&lt;TBindingType&gt; changed, bool onlyWhenChanged = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.IBindable.html#uFrame_MVVM_Bindings_IBindable">IBindable</a></td>
+                    <td><em>bindable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">P</span>&lt;TBindingType&gt;</td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TBindingType&gt;</td>
+                    <td><em>changed</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>onlyWhenChanged</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TBindingType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindToViewCollection__1_ViewBase_ModelCollection___0__System_Func_ViewModel_ViewBase__System_Action_ViewBase__System_Action_ViewBase__Transform_System_Boolean_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindToViewCollection%60%601(ViewBase%2CModelCollection%7B%60%600%7D%2CSystem.Func%7BViewModel%2CViewBase%7D%2CSystem.Action%7BViewBase%7D%2CSystem.Action%7BViewBase%7D%2CTransform%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindToViewCollection__1_ViewBase_ModelCollection___0__System_Func_ViewModel_ViewBase__System_Action_ViewBase__System_Action_ViewBase__Transform_System_Boolean_" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindToViewCollection``1(ViewBase,ModelCollection{``0},System.Func{ViewModel,ViewBase},System.Action{ViewBase},System.Action{ViewBase},Transform,System.Boolean)">BindToViewCollection&lt;TCollectionType&gt;(ViewBase, ModelCollection&lt;TCollectionType&gt;, Func&lt;ViewModel, ViewBase&gt;, Action&lt;ViewBase&gt;, Action&lt;ViewBase&gt;, Transform, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static ModelViewModelCollectionBinding BindToViewCollection&lt;TCollectionType&gt;(this ViewBase view, ModelCollection&lt;TCollectionType&gt; viewModelCollection, Func&lt;ViewModel, ViewBase&gt; createView, Action&lt;ViewBase&gt; added, Action&lt;ViewBase&gt; removed, Transform parent, bool viewFirst = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>view</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">ModelCollection</span>&lt;TCollectionType&gt;</td>
+                    <td><em>viewModelCollection</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<span class="xref">ViewModel</span>, <span class="xref">ViewBase</span>&gt;</td>
+                    <td><em>createView</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;<span class="xref">ViewBase</span>&gt;</td>
+                    <td><em>added</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;<span class="xref">ViewBase</span>&gt;</td>
+                    <td><em>removed</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Transform</span></td>
+                    <td><em>parent</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>viewFirst</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.ModelViewModelCollectionBinding.html#uFrame_MVVM_Bindings_ModelViewModelCollectionBinding">ModelViewModelCollectionBinding</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TCollectionType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindTwoWay__1_uFrame_MVVM_Bindings_IBindable_P___0__System_Action___0__System_Boolean_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindTwoWay%60%601(uFrame.MVVM.Bindings.IBindable%2CP%7B%60%600%7D%2CSystem.Action%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindTwoWay__1_uFrame_MVVM_Bindings_IBindable_P___0__System_Action___0__System_Boolean_" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindTwoWay``1(uFrame.MVVM.Bindings.IBindable,P{``0},System.Action{``0},System.Boolean)">BindTwoWay&lt;TBindingType&gt;(IBindable, P&lt;TBindingType&gt;, Action&lt;TBindingType&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Binds a property to a view, this is the standard property binding extension method.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindTwoWay&lt;TBindingType&gt;(this IBindable bindable, P&lt;TBindingType&gt; property, Action&lt;TBindingType&gt; changed, bool onlyWhenChanged = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.IBindable.html#uFrame_MVVM_Bindings_IBindable">IBindable</a></td>
+                    <td><em>bindable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">P</span>&lt;TBindingType&gt;</td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TBindingType&gt;</td>
+                    <td><em>changed</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>onlyWhenChanged</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TBindingType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindViewCollision_ViewBase_uFrame_MVVM_Bindings_CollisionEventType_System_Action_ViewBase__.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindViewCollision(ViewBase%2CuFrame.MVVM.Bindings.CollisionEventType%2CSystem.Action%7BViewBase%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindViewCollision_ViewBase_uFrame_MVVM_Bindings_CollisionEventType_System_Action_ViewBase__" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindViewCollision(ViewBase,uFrame.MVVM.Bindings.CollisionEventType,System.Action{ViewBase})">BindViewCollision(ViewBase, CollisionEventType, Action&lt;ViewBase&gt;)</h4>
+              <div class="markdown level1 summary"><p>Creates a binding on collisions that filter to views only.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindViewCollision(this ViewBase t, CollisionEventType eventType, Action&lt;ViewBase&gt; collision)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>t</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;<span class="xref">ViewBase</span>&gt;</td>
+                    <td><em>collision</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_BindViewCollisionWith__1_ViewBase_uFrame_MVVM_Bindings_CollisionEventType_System_Action___0__.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.BindViewCollisionWith%60%601(ViewBase%2CuFrame.MVVM.Bindings.CollisionEventType%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_BindViewCollisionWith__1_ViewBase_uFrame_MVVM_Bindings_CollisionEventType_System_Action___0__" data-uid="uFrame.MVVM.Bindings.ViewBindings.BindViewCollisionWith``1(ViewBase,uFrame.MVVM.Bindings.CollisionEventType,System.Action{``0})">BindViewCollisionWith&lt;T&gt;(ViewBase, CollisionEventType, Action&lt;T&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable BindViewCollisionWith&lt;T&gt;(this ViewBase t, CollisionEventType eventType, Action&lt;T&gt; collision)where T : ViewBase</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>t</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+                    <td><em>collision</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_DisposeWhenChanged__1_System_IDisposable_P___0__System_Boolean_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.DisposeWhenChanged%60%601(System.IDisposable%2CP%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_DisposeWhenChanged__1_System_IDisposable_P___0__System_Boolean_" data-uid="uFrame.MVVM.Bindings.ViewBindings.DisposeWhenChanged``1(System.IDisposable,P{``0},System.Boolean)">DisposeWhenChanged&lt;T&gt;(IDisposable, P&lt;T&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable DisposeWhenChanged&lt;T&gt;(this IDisposable disposable, P&lt;T&gt; sourceProperty, bool onlyWhenChanged = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td><em>disposable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">P</span>&lt;T&gt;</td>
+                    <td><em>sourceProperty</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>onlyWhenChanged</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_DisposeWith_System_IDisposable_GameObject_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.DisposeWith(System.IDisposable%2CGameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_DisposeWith_System_IDisposable_GameObject_" data-uid="uFrame.MVVM.Bindings.ViewBindings.DisposeWith(System.IDisposable,GameObject)">DisposeWith(IDisposable, GameObject)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDisposable DisposeWith(this IDisposable disposable, GameObject gameObject)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td><em>disposable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>gameObject</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IDisposable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_EnsureComponent__1_GameObject_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.EnsureComponent%60%601(GameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_EnsureComponent__1_GameObject_" data-uid="uFrame.MVVM.Bindings.ViewBindings.EnsureComponent``1(GameObject)">EnsureComponent&lt;T&gt;(GameObject)</h4>
+              <div class="markdown level1 summary"><p>Ensures that a component exists and returns it.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static T EnsureComponent&lt;T&gt;(this GameObject t)where T : MonoBehaviour</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>t</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_OnCollision2DObservable_GameObject_uFrame_MVVM_Bindings_CollisionEventType_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.OnCollision2DObservable(GameObject%2CuFrame.MVVM.Bindings.CollisionEventType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_OnCollision2DObservable_GameObject_uFrame_MVVM_Bindings_CollisionEventType_" data-uid="uFrame.MVVM.Bindings.ViewBindings.OnCollision2DObservable(GameObject,uFrame.MVVM.Bindings.CollisionEventType)">OnCollision2DObservable(GameObject, CollisionEventType)</h4>
+              <div class="markdown level1 summary"><p>Bind a Unity Collision event to a ViewModel command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IObservable&lt;Collision2D&gt; OnCollision2DObservable(this GameObject t, CollisionEventType eventType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>t</em></td>
+                    <td><p>The view that owns the binding</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td><p>The collision event to bind to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;<span class="xref">Collision2D</span>&gt;</td>
+                    <td><p>The collision binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_OnCollisionObservable_GameObject_uFrame_MVVM_Bindings_CollisionEventType_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.OnCollisionObservable(GameObject%2CuFrame.MVVM.Bindings.CollisionEventType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_OnCollisionObservable_GameObject_uFrame_MVVM_Bindings_CollisionEventType_" data-uid="uFrame.MVVM.Bindings.ViewBindings.OnCollisionObservable(GameObject,uFrame.MVVM.Bindings.CollisionEventType)">OnCollisionObservable(GameObject, CollisionEventType)</h4>
+              <div class="markdown level1 summary"><p>Bind a Unity Collision event to a ViewModel command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use UniRx.Triggers.OnCollision[X]AsObservable&quot;)]
+public static IObservable&lt;Collision&gt; OnCollisionObservable(this GameObject t, CollisionEventType eventType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>t</em></td>
+                    <td><p>The view that owns the binding</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td><p>The collision event to bind to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;<span class="xref">Collision</span>&gt;</td>
+                    <td><p>The collision binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_OnDestroyObservable_GameObject_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.OnDestroyObservable(GameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_OnDestroyObservable_GameObject_" data-uid="uFrame.MVVM.Bindings.ViewBindings.OnDestroyObservable(GameObject)">OnDestroyObservable(GameObject)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IObservable&lt;Unit&gt; OnDestroyObservable(this GameObject gameObject)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>gameObject</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;<span class="xref">Unit</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_OnMouseEvent_ViewBase_uFrame_MVVM_Bindings_MouseEventType_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.OnMouseEvent(ViewBase%2CuFrame.MVVM.Bindings.MouseEventType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_OnMouseEvent_ViewBase_uFrame_MVVM_Bindings_MouseEventType_" data-uid="uFrame.MVVM.Bindings.ViewBindings.OnMouseEvent(ViewBase,uFrame.MVVM.Bindings.MouseEventType)">OnMouseEvent(ViewBase, MouseEventType)</h4>
+              <div class="markdown level1 summary"><p>Binds a mouse event to a ViewModel Command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IObservable&lt;Unit&gt; OnMouseEvent(this ViewBase view, MouseEventType eventType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>view</em></td>
+                    <td><p>The view that will own the Binding.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.MouseEventType.html#uFrame_MVVM_Bindings_MouseEventType">MouseEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td><p>The mouse event to bind to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;<span class="xref">Unit</span>&gt;</td>
+                    <td><p>The binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_OnTrigger2DObservable_GameObject_uFrame_MVVM_Bindings_CollisionEventType_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.OnTrigger2DObservable(GameObject%2CuFrame.MVVM.Bindings.CollisionEventType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_OnTrigger2DObservable_GameObject_uFrame_MVVM_Bindings_CollisionEventType_" data-uid="uFrame.MVVM.Bindings.ViewBindings.OnTrigger2DObservable(GameObject,uFrame.MVVM.Bindings.CollisionEventType)">OnTrigger2DObservable(GameObject, CollisionEventType)</h4>
+              <div class="markdown level1 summary"><p>Bind a Unity Collision event to a ViewModel command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IObservable&lt;Collider2D&gt; OnTrigger2DObservable(this GameObject t, CollisionEventType eventType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>t</em></td>
+                    <td><p>The view that owns the binding</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td><p>The collision event to bind to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;<span class="xref">Collider2D</span>&gt;</td>
+                    <td><p>The collision binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_OnTriggerObservable_GameObject_uFrame_MVVM_Bindings_CollisionEventType_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.OnTriggerObservable(GameObject%2CuFrame.MVVM.Bindings.CollisionEventType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_OnTriggerObservable_GameObject_uFrame_MVVM_Bindings_CollisionEventType_" data-uid="uFrame.MVVM.Bindings.ViewBindings.OnTriggerObservable(GameObject,uFrame.MVVM.Bindings.CollisionEventType)">OnTriggerObservable(GameObject, CollisionEventType)</h4>
+              <div class="markdown level1 summary"><p>Bind a Unity Collision event to a ViewModel command.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IObservable&lt;Collider&gt; OnTriggerObservable(this GameObject t, CollisionEventType eventType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>t</em></td>
+                    <td><p>The view that owns the binding</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td><p>The collision event to bind to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;<span class="xref">Collider</span>&gt;</td>
+                    <td><p>The collision binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_OnViewCollision_GameObject_uFrame_MVVM_Bindings_CollisionEventType_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.OnViewCollision(GameObject%2CuFrame.MVVM.Bindings.CollisionEventType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_OnViewCollision_GameObject_uFrame_MVVM_Bindings_CollisionEventType_" data-uid="uFrame.MVVM.Bindings.ViewBindings.OnViewCollision(GameObject,uFrame.MVVM.Bindings.CollisionEventType)">OnViewCollision(GameObject, CollisionEventType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IObservable&lt;ViewBase&gt; OnViewCollision(this GameObject t, CollisionEventType eventType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>t</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;<span class="xref">ViewBase</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_OnViewCollisionWith__1_GameObject_uFrame_MVVM_Bindings_CollisionEventType_.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.OnViewCollisionWith%60%601(GameObject%2CuFrame.MVVM.Bindings.CollisionEventType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_OnViewCollisionWith__1_GameObject_uFrame_MVVM_Bindings_CollisionEventType_" data-uid="uFrame.MVVM.Bindings.ViewBindings.OnViewCollisionWith``1(GameObject,uFrame.MVVM.Bindings.CollisionEventType)">OnViewCollisionWith&lt;T&gt;(GameObject, CollisionEventType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IObservable&lt;T&gt; OnViewCollisionWith&lt;T&gt;(this GameObject t, CollisionEventType eventType)where T : ViewBase</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GameObject</span></td>
+                    <td><em>t</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.MVVM.Bindings.CollisionEventType.html#uFrame_MVVM_Bindings_CollisionEventType">CollisionEventType</a></td>
+                    <td><em>eventType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;T&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_MVVM_Bindings_ViewBindings_ScreenToRaycastAsObservable__1_ViewBase_System_Func_RaycastHit___0__.md&amp;value=---%0Auid%3A%20uFrame.MVVM.Bindings.ViewBindings.ScreenToRaycastAsObservable%60%601(ViewBase%2CSystem.Func%7BRaycastHit%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_MVVM_Bindings_ViewBindings_ScreenToRaycastAsObservable__1_ViewBase_System_Func_RaycastHit___0__" data-uid="uFrame.MVVM.Bindings.ViewBindings.ScreenToRaycastAsObservable``1(ViewBase,System.Func{RaycastHit,``0})">ScreenToRaycastAsObservable&lt;T&gt;(ViewBase, Func&lt;RaycastHit, T&gt;)</h4>
+              <div class="markdown level1 summary"><p>Bind a key to a ViewModel Command</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IObservable&lt;T&gt; ScreenToRaycastAsObservable&lt;T&gt;(this ViewBase t, Func&lt;RaycastHit, T&gt; onHit)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ViewBase</span></td>
+                    <td><em>t</em></td>
+                    <td><p>The view that owns the binding</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<span class="xref">RaycastHit</span>, T&gt;</td>
+                    <td><em>onHit</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IObservable</span>&lt;T&gt;</td>
+                    <td><p>The binding class that allows chaining extra options.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>T</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GenericNode
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GenericNode
+   ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              
+              <h1 id="uFrame_Editor_Graphs_Data_GenericNode" data-uid="uFrame.Editor.Graphs.Data.GenericNode">Class GenericNode
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode">GraphNode</a></div>
+                  <div class="level2"><span class="xref">GenericNode</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_FilterLocations">GraphNode.FilterLocations</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Order">GraphNode.Order</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_DisplayedFlags">GraphNode.DisplayedFlags</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_FilterLocation">GraphNode.FilterLocation</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Filter">GraphNode.Filter</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_InputFrom__1">GraphNode.InputFrom&lt;TType&gt;()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_InputsFrom__1">GraphNode.InputsFrom&lt;TType&gt;()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OutputsTo__1">GraphNode.OutputsTo&lt;TType&gt;()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OutputTo__1">GraphNode.OutputTo&lt;TType&gt;()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_ToString">GraphNode.ToString()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Inputs">GraphNode.Inputs</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Outputs">GraphNode.Outputs</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_AllowInputs">GraphNode.AllowInputs</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_AllowOutputs">GraphNode.AllowOutputs</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_InputDescription">GraphNode.InputDescription</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OutputDescription">GraphNode.OutputDescription</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_AllowMultipleInputs">GraphNode.AllowMultipleInputs</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_AllowMultipleOutputs">GraphNode.AllowMultipleOutputs</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Color">GraphNode.Color</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_NodeConfig">GraphNode.NodeConfig</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OnConnectionApplied_uFrame_Editor_Graphs_Data_IConnectable_uFrame_Editor_Graphs_Data_IConnectable_">GraphNode.OnConnectionApplied(IConnectable, IConnectable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_CanOutputTo_uFrame_Editor_Graphs_Data_IConnectable_">GraphNode.CanOutputTo(IConnectable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_CanInputFrom_uFrame_Editor_Graphs_Data_IConnectable_">GraphNode.CanInputFrom(IConnectable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OnOutputConnectionRemoved_uFrame_Editor_Graphs_Data_IConnectable_">GraphNode.OnOutputConnectionRemoved(IConnectable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OnInputConnectionRemoved_uFrame_Editor_Graphs_Data_IConnectable_">GraphNode.OnInputConnectionRemoved(IConnectable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OnConnectedToInput_uFrame_Editor_Graphs_Data_IConnectable_">GraphNode.OnConnectedToInput(IConnectable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OnConnectedFromOutput_uFrame_Editor_Graphs_Data_IConnectable_">GraphNode.OnConnectedFromOutput(IConnectable)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Flags">GraphNode.Flags</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Item_System_String_">GraphNode.Item[String]</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Comments">GraphNode.Comments</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Validate">GraphNode.Validate()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_PersistedItems">GraphNode.PersistedItems</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_CurrentType">GraphNode.CurrentType</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_DefaultLocation">GraphNode.DefaultLocation</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_GraphId">GraphNode.GraphId</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Graph">GraphNode.Graph</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Dirty">GraphNode.Dirty</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_FullLabel">GraphNode.FullLabel</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_FullName">GraphNode.FullName</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_HeaderPosition">GraphNode.HeaderPosition</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Highlighter">GraphNode.Highlighter</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Repository">GraphNode.Repository</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Identifier">GraphNode.Identifier</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Changed">GraphNode.Changed</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_ForeignKeys">GraphNode.ForeignKeys</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_ImportedOnly">GraphNode.ImportedOnly</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_IsExplorerCollapsed">GraphNode.IsExplorerCollapsed</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_InfoLabel">GraphNode.InfoLabel</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_IsEditing">GraphNode.IsEditing</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_IsExternal">GraphNode.IsExternal</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_IsNewNode">GraphNode.IsNewNode</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_IsSelectable">GraphNode.IsSelectable</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_IsSelected">GraphNode.IsSelected</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_DisplayedItems">GraphNode.DisplayedItems</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Precompiled">GraphNode.Precompiled</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_UseStraightLines">GraphNode.UseStraightLines</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_FilterNodes">GraphNode.FilterNodes</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_FilterItems">GraphNode.FilterItems</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_AllowExternalNodes">GraphNode.AllowExternalNodes</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Namespace">GraphNode.Namespace</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_NodeId">GraphNode.NodeId</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Node">GraphNode.Node</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_OldName">GraphNode.OldName</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Group">GraphNode.Group</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_SearchTag">GraphNode.SearchTag</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Description">GraphNode.Description</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_ShouldRenameRefactor">GraphNode.ShouldRenameRefactor</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Title">GraphNode.Title</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_BeginEditing">GraphNode.BeginEditing()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_BeginRename">GraphNode.BeginRename()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_EnsureUniqueNames">GraphNode.EnsureUniqueNames</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_EndEditing">GraphNode.EndEditing()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_GetFieldType_uFrame_Editor_Graphs_Data_ITypedItem_">GraphNode.GetFieldType(ITypedItem)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_NodeAdded_uFrame_Editor_Graphs_Data_IDiagramNode_">GraphNode.NodeAdded(IDiagramNode)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_GetPropertyType_uFrame_Editor_Graphs_Data_ITypedItem_">GraphNode.GetPropertyType(ITypedItem)</a>
+                </div>
+                <div>
+                  <span class="xref">uFrame.Editor.Graphs.Data.GraphNode.uFrame.Editor.Graphs.Data.IDiagramNodeItem.NodeItemRemoved(uFrame.Editor.Graphs.Data.IDiagramNodeItem)</span>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_RefactorApplied">GraphNode.RefactorApplied()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Remove_uFrame_Editor_Graphs_Data_IDiagramNode_">GraphNode.Remove(IDiagramNode)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_RemoveFromDiagram">GraphNode.RemoveFromDiagram()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Rename_uFrame_Editor_Graphs_Data_IDiagramNode_System_String_">GraphNode.Rename(IDiagramNode, String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Rename_System_String_">GraphNode.Rename(String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_RemoveItem_uFrame_Editor_Graphs_Data_IDiagramNodeItem_">GraphNode.RemoveItem(IDiagramNodeItem)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_RelatedType">GraphNode.RelatedType</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_RelatedTypeName">GraphNode.RelatedTypeName</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_RemoveType">GraphNode.RemoveType()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_AssemblyQualifiedName">GraphNode.AssemblyQualifiedName</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_GetFieldType">GraphNode.GetFieldType()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_GetPropertyType">GraphNode.GetPropertyType()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Errors">GraphNode.Errors</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_RecordRemoved_IDataRecord_">GraphNode.RecordRemoved(IDataRecord)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_ParentItem">GraphNode.ParentItem</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Children">GraphNode.Children</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Expanded">GraphNode.Expanded</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_ChildRecords">GraphNode.ChildRecords</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:uFrame.Editor.Graphs.Data</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="uFrame_Editor_Graphs_Data_GenericNode_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class GenericNode : GraphNode, IDiagramNode, IDiagramNodeItem, ISelectable, IDataHeirarchy, IGraphFilter, IDataRecordRemoved, ITreeItem, IConnectable, IGraphItem, IItem, IDataRecord, ITypeInfo</code></pre>
+              </div>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_AllInputSlots.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.AllInputSlots%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_AllInputSlots" data-uid="uFrame.Editor.Graphs.Data.GenericNode.AllInputSlots">AllInputSlots</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;GenericSlot&gt; AllInputSlots { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.Graphs.Data.GenericSlot.html#uFrame_Editor_Graphs_Data_GenericSlot">GenericSlot</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_AllOutputSlots.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.AllOutputSlots%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_AllOutputSlots" data-uid="uFrame.Editor.Graphs.Data.GenericNode.AllOutputSlots">AllOutputSlots</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;GenericSlot&gt; AllOutputSlots { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.Graphs.Data.GenericSlot.html#uFrame_Editor_Graphs_Data_GenericSlot">GenericSlot</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_AllSlots.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.AllSlots%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_AllSlots" data-uid="uFrame.Editor.Graphs.Data.GenericNode.AllSlots">AllSlots</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;GenericSlot&gt; AllSlots { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.Graphs.Data.GenericSlot.html#uFrame_Editor_Graphs_Data_GenericSlot">GenericSlot</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_BaseTypeInfo.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.BaseTypeInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_BaseTypeInfo" data-uid="uFrame.Editor.Graphs.Data.GenericNode.BaseTypeInfo">BaseTypeInfo</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ITypeInfo BaseTypeInfo { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ITypeInfo</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_Config.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.Config%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_Config" data-uid="uFrame.Editor.Graphs.Data.GenericNode.Config">Config</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public NodeConfigBase Config { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Configurations.NodeConfigBase.html#uFrame_Editor_Configurations_NodeConfigBase">NodeConfigBase</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GraphItems.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GraphItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GraphItems" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GraphItems">GraphItems</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IGraphItem&gt; GraphItems { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.Graphs.Data.IGraphItem.html#uFrame_Editor_Graphs_Data_IGraphItem">IGraphItem</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_GraphItems">GenericNode.GraphItems</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_InnerType.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.InnerType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_InnerType" data-uid="uFrame.Editor.Graphs.Data.GenericNode.InnerType">InnerType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ITypeInfo InnerType { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ITypeInfo</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_IsArray.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.IsArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_IsArray" data-uid="uFrame.Editor.Graphs.Data.GenericNode.IsArray">IsArray</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsArray { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_IsEnum.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.IsEnum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_IsEnum" data-uid="uFrame.Editor.Graphs.Data.GenericNode.IsEnum">IsEnum</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsEnum { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_IsList.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.IsList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_IsList" data-uid="uFrame.Editor.Graphs.Data.GenericNode.IsList">IsList</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsList { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_IsValid.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.IsValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_IsValid" data-uid="uFrame.Editor.Graphs.Data.GenericNode.IsValid">IsValid</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool IsValid { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_IsValid">GenericNode.IsValid</a></div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="uFrame.Editor.Graphs.Data.IGraphItem.html#uFrame_Editor_Graphs_Data_IGraphItem_IsValid">GenericNode.IsValid</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_Label.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_Label" data-uid="uFrame.Editor.Graphs.Data.GenericNode.Label">Label</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string Label { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Label">GenericNode.Label</a></div>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="uFrame.Editor.Graphs.Data.IGraphItem.html#uFrame_Editor_Graphs_Data_IGraphItem_Label">GenericNode.Label</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_Name.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_Name" data-uid="uFrame.Editor.Graphs.Data.GenericNode.Name">Name</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string Name { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Name">GenericNode.Name</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_SlotConfigurations.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.SlotConfigurations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_SlotConfigurations" data-uid="uFrame.Editor.Graphs.Data.GenericNode.SlotConfigurations">SlotConfigurations</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;NodeInputConfig&gt; SlotConfigurations { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="uFrame.Editor.Configurations.NodeInputConfig.html#uFrame_Editor_Configurations_NodeInputConfig">NodeInputConfig</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_SubTitle.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.SubTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_SubTitle" data-uid="uFrame.Editor.Graphs.Data.GenericNode.SubTitle">SubTitle</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string SubTitle { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_SubTitle">GenericNode.SubTitle</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_TypeName.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.TypeName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_TypeName" data-uid="uFrame.Editor.Graphs.Data.GenericNode.TypeName">TypeName</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string TypeName { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_AddReferenceItem_uFrame_Editor_Graphs_Data_IGraphItem_uFrame_Editor_Configurations_NodeConfigSectionBase_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.AddReferenceItem(uFrame.Editor.Graphs.Data.IGraphItem%2CuFrame.Editor.Configurations.NodeConfigSectionBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_AddReferenceItem_uFrame_Editor_Graphs_Data_IGraphItem_uFrame_Editor_Configurations_NodeConfigSectionBase_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.AddReferenceItem(uFrame.Editor.Graphs.Data.IGraphItem,uFrame.Editor.Configurations.NodeConfigSectionBase)">AddReferenceItem(IGraphItem, NodeConfigSectionBase)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddReferenceItem(IGraphItem item, NodeConfigSectionBase mirrorSection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IGraphItem.html#uFrame_Editor_Graphs_Data_IGraphItem">IGraphItem</a></td>
+                    <td><em>item</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Configurations.NodeConfigSectionBase.html#uFrame_Editor_Configurations_NodeConfigSectionBase">NodeConfigSectionBase</a></td>
+                    <td><em>mirrorSection</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_CreateSlot__1_System_String_System_String_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.CreateSlot%60%601(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_CreateSlot__1_System_String_System_String_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.CreateSlot``1(System.String,System.String)">CreateSlot&lt;TSlotType&gt;(String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected TSlotType CreateSlot&lt;TSlotType&gt;(string name, string identifier = null)where TSlotType : GenericSlot, new ()</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>identifier</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TSlotType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TSlotType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetConnectionReference_System_Type_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetConnectionReference(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetConnectionReference_System_Type_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetConnectionReference(System.Type)">GetConnectionReference(Type)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GenericSlot GetConnectionReference(Type inputType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>inputType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.GenericSlot.html#uFrame_Editor_Graphs_Data_GenericSlot">GenericSlot</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetConnectionReference__1.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetConnectionReference%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetConnectionReference__1" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetConnectionReference``1">GetConnectionReference&lt;TType&gt;()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TType GetConnectionReference&lt;TType&gt;()where TType : GenericSlot, new ()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetInputSlotInfos_System_Type_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetInputSlotInfos(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetInputSlotInfos_System_Type_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetInputSlotInfos(System.Type)">GetInputSlotInfos(Type)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;PropertyInfo, InputSlot&gt;&gt; GetInputSlotInfos(Type nodeType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>nodeType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>, <a class="xref" href="uFrame.Editor.Configurations.InputSlot.html#uFrame_Editor_Configurations_InputSlot">InputSlot</a>&gt;&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetMembers.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetMembers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetMembers" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetMembers">GetMembers()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;IMemberInfo&gt; GetMembers()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IMemberInfo</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetOutputSlotInfos_System_Type_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetOutputSlotInfos(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetOutputSlotInfos_System_Type_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetOutputSlotInfos(System.Type)">GetOutputSlotInfos(Type)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;PropertyInfo, OutputSlot&gt;&gt; GetOutputSlotInfos(Type nodeType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>nodeType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>, <a class="xref" href="uFrame.Editor.Configurations.OutputSlot.html#uFrame_Editor_Configurations_OutputSlot">OutputSlot</a>&gt;&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetProxySections_System_Type_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetProxySections(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetProxySections_System_Type_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetProxySections(System.Type)">GetProxySections(Type)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;PropertyInfo, ReferenceSection&gt;&gt; GetProxySections(Type nodeType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>nodeType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>, <a class="xref" href="uFrame.Editor.Configurations.ReferenceSection.html#uFrame_Editor_Configurations_ReferenceSection">ReferenceSection</a>&gt;&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetReferenceSections_System_Type_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetReferenceSections(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetReferenceSections_System_Type_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetReferenceSections(System.Type)">GetReferenceSections(Type)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;PropertyInfo, ReferenceSection&gt;&gt; GetReferenceSections(Type nodeType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>nodeType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>, <a class="xref" href="uFrame.Editor.Configurations.ReferenceSection.html#uFrame_Editor_Configurations_ReferenceSection">ReferenceSection</a>&gt;&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetSections_System_Type_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetSections(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetSections_System_Type_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetSections(System.Type)">GetSections(Type)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;KeyValuePair&lt;PropertyInfo, Section&gt;&gt; GetSections(Type nodeType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>nodeType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>, <a class="xref" href="uFrame.Editor.Configurations.Section.html#uFrame_Editor_Configurations_Section">Section</a>&gt;&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetSlot__1___0__System_String_System_Action___0__.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetSlot%60%601(%60%600%40%2CSystem.String%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetSlot__1___0__System_String_System_Action___0__" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetSlot``1(``0@,System.String,System.Action{``0})">GetSlot&lt;TSlotType&gt;(ref TSlotType, String, Action&lt;TSlotType&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected TSlotType GetSlot&lt;TSlotType&gt;(ref TSlotType field, string name, Action&lt;TSlotType&gt; initialize)where TSlotType : GenericSlot, new ()</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TSlotType</span></td>
+                    <td><em>field</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TSlotType&gt;</td>
+                    <td><em>initialize</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TSlotType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TSlotType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_GetSlot__1___0__System_String_System_String_System_Action___0__.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.GetSlot%60%601(%60%600%40%2CSystem.String%2CSystem.String%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_GetSlot__1___0__System_String_System_String_System_Action___0__" data-uid="uFrame.Editor.Graphs.Data.GenericNode.GetSlot``1(``0@,System.String,System.String,System.Action{``0})">GetSlot&lt;TSlotType&gt;(ref TSlotType, String, String, Action&lt;TSlotType&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected TSlotType GetSlot&lt;TSlotType&gt;(ref TSlotType field, string name, string identifier = null, Action&lt;TSlotType&gt; initialize = null)where TSlotType : GenericSlot, new ()</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TSlotType</span></td>
+                    <td><em>field</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>identifier</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;TSlotType&gt;</td>
+                    <td><em>initialize</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TSlotType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TSlotType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_HasAttribute_System_Type_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.HasAttribute(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_HasAttribute_System_Type_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.HasAttribute(System.Type)">HasAttribute(Type)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool HasAttribute(Type attribute)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>attribute</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_IsAssignableTo_ITypeInfo_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.IsAssignableTo(ITypeInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_IsAssignableTo_ITypeInfo_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.IsAssignableTo(ITypeInfo)">IsAssignableTo(ITypeInfo)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsAssignableTo(ITypeInfo info)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ITypeInfo</span></td>
+                    <td><em>info</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_MoveItemDown_uFrame_Editor_Graphs_Data_IDiagramNodeItem_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.MoveItemDown(uFrame.Editor.Graphs.Data.IDiagramNodeItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_MoveItemDown_uFrame_Editor_Graphs_Data_IDiagramNodeItem_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.MoveItemDown(uFrame.Editor.Graphs.Data.IDiagramNodeItem)">MoveItemDown(IDiagramNodeItem)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void MoveItemDown(IDiagramNodeItem nodeItem)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNodeItem.html#uFrame_Editor_Graphs_Data_IDiagramNodeItem">IDiagramNodeItem</a></td>
+                    <td><em>nodeItem</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_MoveItemDown_uFrame_Editor_Graphs_Data_IDiagramNodeItem_">GenericNode.MoveItemDown(IDiagramNodeItem)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_MoveItemUp_uFrame_Editor_Graphs_Data_IDiagramNodeItem_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.MoveItemUp(uFrame.Editor.Graphs.Data.IDiagramNodeItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_MoveItemUp_uFrame_Editor_Graphs_Data_IDiagramNodeItem_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.MoveItemUp(uFrame.Editor.Graphs.Data.IDiagramNodeItem)">MoveItemUp(IDiagramNodeItem)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void MoveItemUp(IDiagramNodeItem nodeItem)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNodeItem.html#uFrame_Editor_Graphs_Data_IDiagramNodeItem">IDiagramNodeItem</a></td>
+                    <td><em>nodeItem</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_MoveItemUp_uFrame_Editor_Graphs_Data_IDiagramNodeItem_">GenericNode.MoveItemUp(IDiagramNodeItem)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_NodeAddedInFilter_uFrame_Editor_Graphs_Data_IDiagramNode_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.NodeAddedInFilter(uFrame.Editor.Graphs.Data.IDiagramNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_NodeAddedInFilter_uFrame_Editor_Graphs_Data_IDiagramNode_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.NodeAddedInFilter(uFrame.Editor.Graphs.Data.IDiagramNode)">NodeAddedInFilter(IDiagramNode)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void NodeAddedInFilter(IDiagramNode newNodeData)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNode.html#uFrame_Editor_Graphs_Data_IDiagramNode">IDiagramNode</a></td>
+                    <td><em>newNodeData</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_NodeAddedInFilter_uFrame_Editor_Graphs_Data_IDiagramNode_">GenericNode.NodeAddedInFilter(IDiagramNode)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_NodeItemAdded_uFrame_Editor_Graphs_Data_IDiagramNodeItem_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.NodeItemAdded(uFrame.Editor.Graphs.Data.IDiagramNodeItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_NodeItemAdded_uFrame_Editor_Graphs_Data_IDiagramNodeItem_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.NodeItemAdded(uFrame.Editor.Graphs.Data.IDiagramNodeItem)">NodeItemAdded(IDiagramNodeItem)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void NodeItemAdded(IDiagramNodeItem data)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNodeItem.html#uFrame_Editor_Graphs_Data_IDiagramNodeItem">IDiagramNodeItem</a></td>
+                    <td><em>data</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_NodeItemAdded_uFrame_Editor_Graphs_Data_IDiagramNodeItem_">GenericNode.NodeItemAdded(IDiagramNodeItem)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_NodeItemRemoved_uFrame_Editor_Graphs_Data_IDiagramNodeItem_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.NodeItemRemoved(uFrame.Editor.Graphs.Data.IDiagramNodeItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_NodeItemRemoved_uFrame_Editor_Graphs_Data_IDiagramNodeItem_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.NodeItemRemoved(uFrame.Editor.Graphs.Data.IDiagramNodeItem)">NodeItemRemoved(IDiagramNodeItem)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void NodeItemRemoved(IDiagramNodeItem diagramNodeItem)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNodeItem.html#uFrame_Editor_Graphs_Data_IDiagramNodeItem">IDiagramNodeItem</a></td>
+                    <td><em>diagramNodeItem</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_NodeItemRemoved_uFrame_Editor_Graphs_Data_IDiagramNodeItem_">GenericNode.NodeItemRemoved(IDiagramNodeItem)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_NodeRemoved_uFrame_Editor_Graphs_Data_IDiagramNode_.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.NodeRemoved(uFrame.Editor.Graphs.Data.IDiagramNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_NodeRemoved_uFrame_Editor_Graphs_Data_IDiagramNode_" data-uid="uFrame.Editor.Graphs.Data.GenericNode.NodeRemoved(uFrame.Editor.Graphs.Data.IDiagramNode)">NodeRemoved(IDiagramNode)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void NodeRemoved(IDiagramNode nodeData)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Editor.Graphs.Data.IDiagramNode.html#uFrame_Editor_Graphs_Data_IDiagramNode">IDiagramNode</a></td>
+                    <td><em>nodeData</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_NodeRemoved_uFrame_Editor_Graphs_Data_IDiagramNode_">GenericNode.NodeRemoved(IDiagramNode)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_Graphs_Data_GenericNode_Validate_List_uFrame_Editor_Graphs_Data_ErrorInfo__.md&amp;value=---%0Auid%3A%20uFrame.Editor.Graphs.Data.GenericNode.Validate(List%7BuFrame.Editor.Graphs.Data.ErrorInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_Graphs_Data_GenericNode_Validate_List_uFrame_Editor_Graphs_Data_ErrorInfo__" data-uid="uFrame.Editor.Graphs.Data.GenericNode.Validate(List{uFrame.Editor.Graphs.Data.ErrorInfo})">Validate(List&lt;ErrorInfo&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Validate(List&lt;ErrorInfo&gt; errors)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="uFrame.Editor.Graphs.Data.ErrorInfo.html#uFrame_Editor_Graphs_Data_ErrorInfo">ErrorInfo</a>&gt;</td>
+                    <td><em>errors</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.Graphs.Data.GraphNode.html#uFrame_Editor_Graphs_Data_GraphNode_Validate_List_uFrame_Editor_Graphs_Data_ErrorInfo__">GenericNode.Validate(List&lt;ErrorInfo&gt;)</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

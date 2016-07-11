@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SceneManagementService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SceneManagementService
+   ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              
+              <h1 id="uFrame_Kernel_SceneManagementService" data-uid="uFrame.Kernel.SceneManagementService">Class SceneManagementService
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="uFrame.Kernel.uFrameComponent.html#uFrame_Kernel_uFrameComponent">uFrameComponent</a></div>
+                  <div class="level2"><a class="xref" href="uFrame.Kernel.SystemServiceMonoBehavior.html#uFrame_Kernel_SystemServiceMonoBehavior">SystemServiceMonoBehavior</a></div>
+                  <div class="level3"><span class="xref">SceneManagementService</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.SystemServiceMonoBehavior.html#uFrame_Kernel_SystemServiceMonoBehavior_Disposer">SystemServiceMonoBehavior.Disposer</a>
+                </div>
+                <div>
+                  <span class="xref">uFrame.Kernel.SystemServiceMonoBehavior.uFrame.Kernel.ISystemService.EventAggregator</span>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.SystemServiceMonoBehavior.html#uFrame_Kernel_SystemServiceMonoBehavior_SetupAsync">SystemServiceMonoBehavior.SetupAsync()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.SystemServiceMonoBehavior.html#uFrame_Kernel_SystemServiceMonoBehavior_Loaded">SystemServiceMonoBehavior.Loaded()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.SystemServiceMonoBehavior.html#uFrame_Kernel_SystemServiceMonoBehavior_OnDestroy">SystemServiceMonoBehavior.OnDestroy()</a>
+                </div>
+                <div>
+                  <span class="xref">uFrame.Kernel.uFrameComponent.uFrame.Kernel.IDisposableContainer.Disposer</span>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.uFrameComponent.html#uFrame_Kernel_uFrameComponent_EventAggregator">uFrameComponent.EventAggregator</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.uFrameComponent.html#uFrame_Kernel_uFrameComponent_OnEvent__1">uFrameComponent.OnEvent&lt;TEvent&gt;()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.uFrameComponent.html#uFrame_Kernel_uFrameComponent_Publish_System_Object_">uFrameComponent.Publish(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.uFrameComponent.html#uFrame_Kernel_uFrameComponent_Start">uFrameComponent.Start()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.uFrameComponent.html#uFrame_Kernel_uFrameComponent_KernelLoading">uFrameComponent.KernelLoading()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Kernel.uFrameComponent.html#uFrame_Kernel_uFrameComponent_KernelLoaded">uFrameComponent.KernelLoaded()</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:uFrame.Kernel</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="uFrame_Kernel_SceneManagementService_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class SceneManagementService : SystemServiceMonoBehavior, ISystemService, IDisposableContainer</code></pre>
+              </div>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_LoadedScenes.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.LoadedScenes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_LoadedScenes" data-uid="uFrame.Kernel.SceneManagementService.LoadedScenes">LoadedScenes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;IScene&gt; LoadedScenes { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="uFrame.Kernel.IScene.html#uFrame_Kernel_IScene">IScene</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_SceneLoaders.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.SceneLoaders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_SceneLoaders" data-uid="uFrame.Kernel.SceneManagementService.SceneLoaders">SceneLoaders</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;ISceneLoader&gt; SceneLoaders { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="uFrame.Kernel.ISceneLoader.html#uFrame_Kernel_ISceneLoader">ISceneLoader</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_ScenesQueue.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.ScenesQueue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_ScenesQueue" data-uid="uFrame.Kernel.SceneManagementService.ScenesQueue">ScenesQueue</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Queue&lt;SceneQueueItem&gt; ScenesQueue { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Queue</span>&lt;<a class="xref" href="uFrame.Kernel.SceneQueueItem.html#uFrame_Kernel_SceneQueueItem">SceneQueueItem</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_ExecuteLoad.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.ExecuteLoad%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_ExecuteLoad" data-uid="uFrame.Kernel.SceneManagementService.ExecuteLoad">ExecuteLoad()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ExecuteLoad()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_ExecuteLoadAsync.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.ExecuteLoadAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_ExecuteLoadAsync" data-uid="uFrame.Kernel.SceneManagementService.ExecuteLoadAsync">ExecuteLoadAsync()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IEnumerator ExecuteLoadAsync()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerator</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_LoadScene_System_String_uFrame_Kernel_ISceneSettings_System_Boolean_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.LoadScene(System.String%2CuFrame.Kernel.ISceneSettings%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_LoadScene_System_String_uFrame_Kernel_ISceneSettings_System_Boolean_" data-uid="uFrame.Kernel.SceneManagementService.LoadScene(System.String,uFrame.Kernel.ISceneSettings,System.Boolean)">LoadScene(String, ISceneSettings, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void LoadScene(string name, ISceneSettings settings, bool restrictToSingleScene)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.ISceneSettings.html#uFrame_Kernel_ISceneSettings">ISceneSettings</a></td>
+                    <td><em>settings</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>restrictToSingleScene</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_LoadSceneInternal_System_String_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.LoadSceneInternal(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_LoadSceneInternal_System_String_" data-uid="uFrame.Kernel.SceneManagementService.LoadSceneInternal(System.String)">LoadSceneInternal(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerator LoadSceneInternal(string sceneName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sceneName</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerator</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_LoadScenes_uFrame_Kernel_SceneQueueItem___.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.LoadScenes(uFrame.Kernel.SceneQueueItem%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_LoadScenes_uFrame_Kernel_SceneQueueItem___" data-uid="uFrame.Kernel.SceneManagementService.LoadScenes(uFrame.Kernel.SceneQueueItem[])">LoadScenes(SceneQueueItem[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void LoadScenes(params SceneQueueItem[] items)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.SceneQueueItem.html#uFrame_Kernel_SceneQueueItem">SceneQueueItem</a>[]</td>
+                    <td><em>items</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_QueueSceneLoad_System_String_uFrame_Kernel_ISceneSettings_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.QueueSceneLoad(System.String%2CuFrame.Kernel.ISceneSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_QueueSceneLoad_System_String_uFrame_Kernel_ISceneSettings_" data-uid="uFrame.Kernel.SceneManagementService.QueueSceneLoad(System.String,uFrame.Kernel.ISceneSettings)">QueueSceneLoad(String, ISceneSettings)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void QueueSceneLoad(string sceneName, ISceneSettings settings)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sceneName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.ISceneSettings.html#uFrame_Kernel_ISceneSettings">ISceneSettings</a></td>
+                    <td><em>settings</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_QueueSceneLoadIfNotAlready_System_String_uFrame_Kernel_ISceneSettings_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.QueueSceneLoadIfNotAlready(System.String%2CuFrame.Kernel.ISceneSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_QueueSceneLoadIfNotAlready_System_String_uFrame_Kernel_ISceneSettings_" data-uid="uFrame.Kernel.SceneManagementService.QueueSceneLoadIfNotAlready(System.String,uFrame.Kernel.ISceneSettings)">QueueSceneLoadIfNotAlready(String, ISceneSettings)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void QueueSceneLoadIfNotAlready(string sceneName, ISceneSettings settings)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sceneName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.ISceneSettings.html#uFrame_Kernel_ISceneSettings">ISceneSettings</a></td>
+                    <td><em>settings</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_QueueScenesLoad_uFrame_Kernel_SceneQueueItem___.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.QueueScenesLoad(uFrame.Kernel.SceneQueueItem%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_QueueScenesLoad_uFrame_Kernel_SceneQueueItem___" data-uid="uFrame.Kernel.SceneManagementService.QueueScenesLoad(uFrame.Kernel.SceneQueueItem[])">QueueScenesLoad(SceneQueueItem[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void QueueScenesLoad(params SceneQueueItem[] items)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.SceneQueueItem.html#uFrame_Kernel_SceneQueueItem">SceneQueueItem</a>[]</td>
+                    <td><em>items</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_Setup.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.Setup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_Setup" data-uid="uFrame.Kernel.SceneManagementService.Setup">Setup()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Setup()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Kernel.SystemServiceMonoBehavior.html#uFrame_Kernel_SystemServiceMonoBehavior_Setup">SceneManagementService.Setup()</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_SetupScene_uFrame_Kernel_IScene_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.SetupScene(uFrame.Kernel.IScene)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_SetupScene_uFrame_Kernel_IScene_" data-uid="uFrame.Kernel.SceneManagementService.SetupScene(uFrame.Kernel.IScene)">SetupScene(IScene)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerator SetupScene(IScene sceneRoot)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.IScene.html#uFrame_Kernel_IScene">IScene</a></td>
+                    <td><em>sceneRoot</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerator</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_UnloadScene_System_String_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.UnloadScene(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_UnloadScene_System_String_" data-uid="uFrame.Kernel.SceneManagementService.UnloadScene(System.String)">UnloadScene(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnloadScene(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_UnloadScene_uFrame_Kernel_IScene_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.UnloadScene(uFrame.Kernel.IScene)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_UnloadScene_uFrame_Kernel_IScene_" data-uid="uFrame.Kernel.SceneManagementService.UnloadScene(uFrame.Kernel.IScene)">UnloadScene(IScene)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnloadScene(IScene sceneRoot)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.IScene.html#uFrame_Kernel_IScene">IScene</a></td>
+                    <td><em>sceneRoot</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_UnloadSceneAsync_System_String_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.UnloadSceneAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_UnloadSceneAsync_System_String_" data-uid="uFrame.Kernel.SceneManagementService.UnloadSceneAsync(System.String)">UnloadSceneAsync(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IEnumerator UnloadSceneAsync(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerator</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_UnloadSceneAsync_uFrame_Kernel_IScene_.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.UnloadSceneAsync(uFrame.Kernel.IScene)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_UnloadSceneAsync_uFrame_Kernel_IScene_" data-uid="uFrame.Kernel.SceneManagementService.UnloadSceneAsync(uFrame.Kernel.IScene)">UnloadSceneAsync(IScene)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IEnumerator UnloadSceneAsync(IScene sceneRoot)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.IScene.html#uFrame_Kernel_IScene">IScene</a></td>
+                    <td><em>sceneRoot</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerator</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_UnloadScenes_System_String___.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.UnloadScenes(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_UnloadScenes_System_String___" data-uid="uFrame.Kernel.SceneManagementService.UnloadScenes(System.String[])">UnloadScenes(String[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnloadScenes(string[] names)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>names</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Kernel_SceneManagementService_UnloadScenes_uFrame_Kernel_IScene___.md&amp;value=---%0Auid%3A%20uFrame.Kernel.SceneManagementService.UnloadScenes(uFrame.Kernel.IScene%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Kernel_SceneManagementService_UnloadScenes_uFrame_Kernel_IScene___" data-uid="uFrame.Kernel.SceneManagementService.UnloadScenes(uFrame.Kernel.IScene[])">UnloadScenes(IScene[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void UnloadScenes(IScene[] sceneRoots)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="uFrame.Kernel.IScene.html#uFrame_Kernel_IScene">IScene</a>[]</td>
+                    <td><em>sceneRoots</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

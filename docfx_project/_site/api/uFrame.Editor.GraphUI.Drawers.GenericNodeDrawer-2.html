@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GenericNodeDrawer&lt;TData, TViewModel&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GenericNodeDrawer&lt;TData, TViewModel&gt;
+   ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              
+              <h1 id="uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2" data-uid="uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer`2">Class GenericNodeDrawer&lt;TData, TViewModel&gt;
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer">Drawer</a></div>
+                  <div class="level2"><a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer">DiagramNodeDrawer</a></div>
+                  <div class="level3"><a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer-1.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_1">DiagramNodeDrawer</a>&lt;TViewModel&gt;</div>
+                  <div class="level4"><span class="xref">GenericNodeDrawer&lt;TData, TViewModel&gt;</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer-1.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_1_Bounds">DiagramNodeDrawer&lt;TViewModel&gt;.Bounds</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer-1.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_1_NodeViewModel">DiagramNodeDrawer&lt;TViewModel&gt;.NodeViewModel</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_Container">DiagramNodeDrawer.Container</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_ViewModel">DiagramNodeDrawer.ViewModel</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_DataContextChanged">DiagramNodeDrawer.DataContextChanged()</a>
+                </div>
+                <div>
+                  <span class="xref">uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.uFrame.Editor.GraphUI.Drawers.IDrawer.OnMouseDown(MouseEvent)</span>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_Scale">DiagramNodeDrawer.Scale</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_ItemStyle">DiagramNodeDrawer.ItemStyle</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_SelectedItemStyle">DiagramNodeDrawer.SelectedItemStyle</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_Width">DiagramNodeDrawer.Width</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_MinWidth">DiagramNodeDrawer.MinWidth</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_ItemHeight">DiagramNodeDrawer.ItemHeight</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_Padding">DiagramNodeDrawer.Padding</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_BackgroundStyle">DiagramNodeDrawer.BackgroundStyle</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_ItemExpandedHeight">DiagramNodeDrawer.ItemExpandedHeight</a>
+                </div>
+                <div>
+                  <span class="xref">uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.uFrame.Editor.GraphUI.Drawers.IDrawer.ShouldFocus</span>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_Diagram">DiagramNodeDrawer.Diagram</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_GetContentDrawers_List_uFrame_Editor_GraphUI_Drawers_IDrawer__">DiagramNodeDrawer.GetContentDrawers(List&lt;IDrawer&gt;)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_DrawChildren_IPlatformDrawer_System_Single_">DiagramNodeDrawer.DrawChildren(IPlatformDrawer, Single)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_GetNodeColorStyle">DiagramNodeDrawer.GetNodeColorStyle()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_HeaderStyle">DiagramNodeDrawer.HeaderStyle</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_GetHighlighter">DiagramNodeDrawer.GetHighlighter()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_OnMouseDown_MouseEvent_">DiagramNodeDrawer.OnMouseDown(MouseEvent)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_OnMouseDoubleClick_MouseEvent_">DiagramNodeDrawer.OnMouseDoubleClick(MouseEvent)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_OnMouseMove_MouseEvent_">DiagramNodeDrawer.OnMouseMove(MouseEvent)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_ShowHeader">DiagramNodeDrawer.ShowHeader</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_RefreshContent">DiagramNodeDrawer.RefreshContent()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_HeaderTextStyle">DiagramNodeDrawer.HeaderTextStyle</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_HeaderPadding">DiagramNodeDrawer.HeaderPadding</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_LayoutChildren_IPlatformDrawer_System_Single_System_Single__System_Boolean_">DiagramNodeDrawer.LayoutChildren(IPlatformDrawer, Single, Single, Boolean)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_IsExternal">DiagramNodeDrawer.IsExternal</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_Dispose">DiagramNodeDrawer.Dispose()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_DataContext">Drawer.DataContext</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_ViewModelObject">Drawer.ViewModelObject</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_Enabled">Drawer.Enabled</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_IsSelected">Drawer.IsSelected</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_Dirty">Drawer.Dirty</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_ShouldFocus">Drawer.ShouldFocus</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_ZOrder">Drawer.ZOrder</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_Children">Drawer.Children</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_ParentDrawer">Drawer.ParentDrawer</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnDeselecting">Drawer.OnDeselecting()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnSelecting">Drawer.OnSelecting()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnDeselected">Drawer.OnDeselected()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnSelected">Drawer.OnSelected()</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnMouseExit_MouseEvent_">Drawer.OnMouseExit(MouseEvent)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnMouseEnter_MouseEvent_">Drawer.OnMouseEnter(MouseEvent)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnDrag_MouseEvent_">Drawer.OnDrag(MouseEvent)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnMouseUp_MouseEvent_">Drawer.OnMouseUp(MouseEvent)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnRightClick_MouseEvent_">Drawer.OnRightClick(MouseEvent)</a>
+                </div>
+                <div>
+                  <a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_OnLayout">Drawer.OnLayout()</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:uFrame.Editor.GraphUI.Drawers</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class GenericNodeDrawer&lt;TData, TViewModel&gt; : DiagramNodeDrawer&lt;TViewModel&gt;, IItemDrawer, INodeDrawer, IDrawer, IDisposable where TData : GenericNode where TViewModel : DiagramNodeViewModel</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><em>TData</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><em>TViewModel</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2__ctor.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer%602.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2__ctor" data-uid="uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer`2.#ctor">GenericNodeDrawer()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected GenericNodeDrawer()</code></pre>
+              </div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2__ctor__1_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer%602.%23ctor(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2__ctor__1_" data-uid="uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer`2.#ctor(`1)">GenericNodeDrawer(TViewModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected GenericNodeDrawer(TViewModel viewModel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TViewModel</span></td>
+                    <td><em>viewModel</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_Draw_IPlatformDrawer_System_Single_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer%602.Draw(IPlatformDrawer%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_Draw_IPlatformDrawer_System_Single_" data-uid="uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer`2.Draw(IPlatformDrawer,System.Single)">Draw(IPlatformDrawer, Single)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Draw(IPlatformDrawer platform, float scale)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IPlatformDrawer</span></td>
+                    <td><em>platform</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Single</span></td>
+                    <td><em>scale</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_Draw_IPlatformDrawer_System_Single_">GenericNodeDrawer&lt;TData, TViewModel&gt;.Draw(IPlatformDrawer, Single)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_DrawBeforeBackground_IPlatformDrawer_Rect_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer%602.DrawBeforeBackground(IPlatformDrawer%2CRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_DrawBeforeBackground_IPlatformDrawer_Rect_" data-uid="uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer`2.DrawBeforeBackground(IPlatformDrawer,Rect)">DrawBeforeBackground(IPlatformDrawer, Rect)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void DrawBeforeBackground(IPlatformDrawer platform, Rect boxRect)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IPlatformDrawer</span></td>
+                    <td><em>platform</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Rect</span></td>
+                    <td><em>boxRect</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_DrawBeforeBackground_IPlatformDrawer_Rect_">GenericNodeDrawer&lt;TData, TViewModel&gt;.DrawBeforeBackground(IPlatformDrawer, Rect)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_Refresh_IPlatformDrawer_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer%602.Refresh(IPlatformDrawer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_Refresh_IPlatformDrawer_" data-uid="uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer`2.Refresh(IPlatformDrawer)">Refresh(IPlatformDrawer)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Refresh(IPlatformDrawer platform)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IPlatformDrawer</span></td>
+                    <td><em>platform</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.GraphUI.Drawers.Drawer.html#uFrame_Editor_GraphUI_Drawers_Drawer_Refresh_IPlatformDrawer_">GenericNodeDrawer&lt;TData, TViewModel&gt;.Refresh(IPlatformDrawer)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/uFrame/DocumentSiteBuilder/new/subtree_merge/docfx_project/apispec/new?filename=uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_Refresh_IPlatformDrawer_Vector2_System_Boolean_.md&amp;value=---%0Auid%3A%20uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer%602.Refresh(IPlatformDrawer%2CVector2%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              
+              <h4 id="uFrame_Editor_GraphUI_Drawers_GenericNodeDrawer_2_Refresh_IPlatformDrawer_Vector2_System_Boolean_" data-uid="uFrame.Editor.GraphUI.Drawers.GenericNodeDrawer`2.Refresh(IPlatformDrawer,Vector2,System.Boolean)">Refresh(IPlatformDrawer, Vector2, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Refresh(IPlatformDrawer platform, Vector2 position, bool hardRefresh = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IPlatformDrawer</span></td>
+                    <td><em>platform</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><em>position</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>hardRefresh</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="uFrame.Editor.GraphUI.Drawers.DiagramNodeDrawer.html#uFrame_Editor_GraphUI_Drawers_DiagramNodeDrawer_Refresh_IPlatformDrawer_Vector2_System_Boolean_">GenericNodeDrawer&lt;TData, TViewModel&gt;.Refresh(IPlatformDrawer, Vector2, Boolean)</a></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
