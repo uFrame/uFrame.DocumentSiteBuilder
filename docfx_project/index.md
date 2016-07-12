@@ -22,7 +22,8 @@ This "frame of mind" for creating games is different than what most Unity develo
 	[uFrame/Core](https://github.com/uFrame/Core) |
 	[uFrame/Architect](https://github.com/uFrame/Architect) |
 	[uFrame/MVVM](https://github.com/uFrame/MVVM) |
-	[UniRx v5.2.0](https://github.com/neuecc/UniRx/releases)
+	[UniRx](https://github.com/neuecc/UniRx/releases)
+	PS: There will be something wrong with UniRx newest version, if you can some unfixable error, please use older release 
 
 2. Open Window -> uFrame -> Graph Window
 
@@ -44,7 +45,8 @@ This "frame of mind" for creating games is different than what most Unity develo
 	[uFrame/Core](https://github.com/uFrame/Core) |
 	[uFrame/Architect](https://github.com/uFrame/Architect) |
 	[uFrame/ECS](https://github.com/uFrame/ECS) |
-	[UniRx v5.2.0](https://github.com/neuecc/UniRx/releases)
+	[UniRx](https://github.com/neuecc/UniRx/releases)
+	PS: There will be something wrong with UniRx newest version, if you can some unfixable error, please use older release
 
 2. Open Window -> uFrame -> Graph Window
 
