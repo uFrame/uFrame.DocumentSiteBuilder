@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>uFrame Architect Framework </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="uFrame Architect Framework ">
+    <meta name="generator" content="docfx 2.1.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <a href="https://github.com/uFrame/DocumentSiteBuilder/blob/master/docfx_project/articles/uFrame Architect Framework.md/#L1" class="btn btn-primary pull-right mobile-hide">Improve this Doc</a>
+              <h1 id="uframe-architect-framework">uFrame Architect Framework</h1>
+              
+<h3 id="what-is-uframe-architect-framework">What is uFrame Architect Framework ?</h3>
+<hr>
+<p>uFrame Architect Framework is an internal project that let&#39;s you generate Models, ViewModels and Drawers based on diagram data.
+It allows you to prototype your own node-based framework, such as uFrame ECS, uFrame MVVM and basically build with uFrame Architect Framework.</p>
+<h3 id="quick-start-of-uframe-architect-framework">Quick Start of uFrame Architect Framework</h3>
+<hr>
+<ol>
+<li><p>Clone the essential parts in to local folder Asset/Plugins/:
+ <a href="https://github.com/uFrame/Core"> uFrame/Core </a> | <a href="https://github.com/uFrame/Architect"> uFrame/Architect </a> | <a href="https://github.com/neuecc/UniRx/releases">UniRx</a> </p>
+</li>
+<li><p>Open Window -&gt; uFrame -&gt; Graph Window</p>
+</li>
+<li><p>Focus on the bottom left, Click &quot;Database&quot; Tab</p>
+</li>
+<li><p>Click &quot;Manage&quot; (Make sure there is no workspace popup at the moment)</p>
+</li>
+<li><p>Select &quot;New Empty Database&quot;, Edit &quot;Name&quot;, &quot;Namespace&quot;, &quot;CodePath&quot; for your project, and click &quot;Create&quot;</p>
+</li>
+<li><p>Select &quot;Create Architect Workspace&quot; and rename &quot;Name&quot;, click &quot;Create&quot;</p>
+</li>
+<li><p>Select &quot;Plugin&quot;, rename &quot;Name&quot;, Click &quot;Create&quot;</p>
+</li>
+<li><p>Enjoy your uFrame Architect tour !!</p>
+</li>
+</ol>
+<h3 id="uframe-architect-framework-overview">uFrame Architect Framework Overview</h3>
+<hr>
+<p>Before diving into uFrame Architect Framework, we need to have a overview of the framework</p>
+<h4 id="plugin-designer">Plugin Designer</h4>
+<p>Plugin Designer is the start point of uFrame Architect Framework ( You can also find similar things in other frameworks ).
+In Plugin Designer, we define our framework as below</p>
+<ol>
+<li>Registe Child GraphItem</li>
+<li>Registe Graph</li>
+<li>Registe Filter Node into graph ( What kind of nodes do we have in a graph)</li>
+<li>Registe Code Generate Template with specfic node</li>
+<li>Registe Connetable source and target ( Make two nodes or items can be connected with line )</li>
+</ol>
+<h4 id="nodes-and-node-item">Nodes and Node Item</h4>
+<h5 id="shellpluginnode">ShellPluginNode</h5>
+<p>The root node of your framework</p>
+<p>For example </p>
+<p><img src="images/1468415232602.png" alt="Alt text"> <img src="images/1468415257019.png" alt="Alt text"></p>
+<h5 id="shellnodeconfig">ShellNodeConfig</h5>
+<p>The most use node, to define your nodes of your framework</p>
+<p>For example </p>
+<p><img src="images/1468415409396.png" alt="Alt text"> <img src="images/1468415444398.png" alt="Alt text"></p>
+<p>Usually you use this kind of node to define the node which will appear in your framework&#39;s graph as below</p>
+<p><img src="images/1468415601381.png" alt="Alt text"></p>
+<p>A ShellNodeConfig can have multiple sections, inputs and outputs, which can be added as below</p>
+<p><img src="images/1468417690661.png" alt="Alt text"></p>
+<h5 id="shellnodesectionsslot-shellnodeinputsslot-shellnodeoutputsslot">ShellNodeSectionsSlot, ShellNodeInputsSlot, ShellNodeOutputsSlot</h5>
+<p>All of these three slots can be use to define the child items of your node, you can edit the slots properties as below
+(Open Inspector Window when the slot item is selected)</p>
+<p><img src="images/1468418030540.png" alt="Alt text"></p>
+<h4 id="generators">Generators</h4>
+<p>After hitting Build/Build All button, uFrame will help you to generate your node into code, the key is setting up your template class and register them with specific node. All template class should be inherited of IClassTemplate.
+( more detail coming soon )</p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
