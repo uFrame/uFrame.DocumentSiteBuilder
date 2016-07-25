@@ -16,14 +16,25 @@ This "frame of mind" for creating games is different than what most Unity develo
 
 ## Quick Start
 
-### For MVVM user
-1. Clone the essential parts in to local folder Asset/Plugins/:
+### For Architect user
+1. Follow [Quick Getting Started](https://github.com/uFrame/Architect) to install uFrame/Architect
  
-	[uFrame/Core](https://github.com/uFrame/Core) |
-	[uFrame/Architect](https://github.com/uFrame/Architect) |
-	[uFrame/MVVM](https://github.com/uFrame/MVVM) |
-	[UniRx](https://github.com/neuecc/UniRx/releases)
-	PS: There will be something wrong with UniRx newest version, if you can some unfixable error, please use older release 
+2. Open Window -> uFrame -> Graph Window
+
+3. Focus on the bottom left, Click "Database" Tab
+
+4. Click "Manage" (Make sure there is no workspace popup at the moment)
+
+5. Select "New Empty Database", Edit "Name", "Namespace", "CodePath" for your project, and click "Create"
+
+6. Select "Create Architect Workspace" and rename "Name", click "Create"
+
+7. Select "Plugin", rename "Name", Click "Create"
+
+8. Enjoy your uFrame Architect tour !!
+
+### For MVVM user
+1. Follow [Quick Getting Started](https://github.com/uFrame/MVVM) to install uFrame/MVVM
 
 2. Open Window -> uFrame -> Graph Window
 
@@ -40,13 +51,7 @@ This "frame of mind" for creating games is different than what most Unity develo
 8. Enjoy your uFrame MVVM tour !!
 
 ### For ECS user
-1. Clone the essential parts in to local folder Asset/Plugins/:
- 
-	[uFrame/Core](https://github.com/uFrame/Core) |
-	[uFrame/Architect](https://github.com/uFrame/Architect) |
-	[uFrame/ECS](https://github.com/uFrame/ECS) |
-	[UniRx](https://github.com/neuecc/UniRx/releases)
-	PS: There will be something wrong with UniRx newest version, if you can some unfixable error, please use older release
+1. Follow [Quick Getting Started](https://github.com/uFrame/ECS) to install uFrame/ECS
 
 2. Open Window -> uFrame -> Graph Window
 
