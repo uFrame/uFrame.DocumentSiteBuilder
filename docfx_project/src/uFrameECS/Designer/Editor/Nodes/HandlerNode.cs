@@ -13,6 +13,7 @@ using uFrame.Editor.Graphs.Data;
 using uFrame.Editor.Graphs.Data.Types;
 using uFrame.Editor.Nodes;
 using uFrame.Json;
+using UniRx;
 
 namespace uFrame.ECS.Editor
 {
@@ -437,12 +438,21 @@ namespace uFrame.ECS.Editor
                 var meta = Meta as EventMetaInfo;
                 if (meta != null && ctx.IsDesignerFile)
                 {
-                    ctx.CurrentDeclaration.BaseTypes.Add(EventType);
-                    var method = meta.SystemType.MethodFromTypeMethod(Meta.SystemEventMethod, false);
-                    method._("{0}()", filterMethod.Name);
-                    ctx.CurrentDeclaration.Members.Add(method);
+                    IEnumerable<CodeTypeReference> cc = ctx.CurrentDeclaration.BaseTypes.Cast<CodeTypeReference>();
+                    if(cc.Count(e => e.BaseType == EventType) == 0)
+                    {
+                        ctx.CurrentDeclaration.BaseTypes.Add(EventType);
+                        var method = meta.SystemType.MethodFromTypeMethod(Meta.SystemEventMethod, false);
+                        method._("{0}()", filterMethod.Name);
+                        ctx.CurrentDeclaration.Members.Add(method);
+                    }
+                    else
+                    {
+                        var method = ctx.CurrentDeclaration.Members.OfType<CodeMemberMethod>().FirstOrDefault(m => m.Name == Meta.SystemEventMethod);
+                        CodeExpression invokeExpression = new CodeMethodInvokeExpression(new CodeMethodReferenceExpression(null, filterMethod.Name));
+                        method.Statements.Add(new CodeExpressionStatement(invokeExpression));
+                    }
                 }
-
             }
 
         }
@@ -473,7 +483,8 @@ namespace uFrame.ECS.Editor
                 ctx.PushStatements(handlerMethod.Statements);
                 // Now writing the handler method contents
                 var name = "handler";
-                if (true) // Used to be IsAsync
+                //if (true) // Used to be IsAsync
+                if(IsAsync)
                 {
                     ctx._("var {0} = new {1}()", name, HandlerMethodName);
                 }
