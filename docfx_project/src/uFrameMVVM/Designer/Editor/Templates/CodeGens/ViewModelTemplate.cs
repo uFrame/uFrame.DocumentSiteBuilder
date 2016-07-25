@@ -91,6 +91,7 @@ namespace uFrame.MVVM.Templates
                 Ctx._("this.{0} = new Signal<{0}Command>(this)", command.Name);
             }
 
+
             foreach (var property in ViewModelProperties)
             {
                 Ctx._("{0} = new P<{1}>(this, \"{2}\")", property.Name.AsSubscribableField(), property.RelatedTypeName, property.Name);
@@ -120,8 +121,7 @@ namespace uFrame.MVVM.Templates
                 var transition = item.OutputTo<TransitionsChildItem>();
                 if (transition == null) continue;
                 var stateMachineNode = transition.Node as IClassTypeNode;
-                var property =
-                    stateMachineNode.ReferencesOf<PropertiesChildItem>().FirstOrDefault(p => p.Node == Ctx.Data);
+                var property = stateMachineNode.ReferencesOf<PropertiesChildItem>().FirstOrDefault(p => p.Node == Ctx.Data);
                 if (property == null) continue;
                 Ctx._("{0}.{1}.AddComputer({2})", property.Name.AsSubscribableProperty(), transition.Name,
                     item.Name.AsSubscribableProperty());
@@ -133,8 +133,7 @@ namespace uFrame.MVVM.Templates
                 var transition = item.OutputTo<TransitionsChildItem>();
                 if (transition == null) continue;
                 var stateMachineNode = transition.Node as IClassTypeNode;
-                var property =
-                    stateMachineNode.ReferencesOf<PropertiesChildItem>().FirstOrDefault(p => p.Node == Ctx.Data);
+                var property = stateMachineNode.ReferencesOf<PropertiesChildItem>().FirstOrDefault(p => p.Node == Ctx.Data);
                 if (property == null) continue;
                 Ctx._("{0}.Subscribe(_ => {1}.{2}.OnNext(true))", item.Name, property.Name.AsSubscribableProperty(),
                     transition.Name);
