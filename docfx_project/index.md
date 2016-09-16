@@ -14,6 +14,14 @@ It is designed to provide developers with the visual editing tools, code structu
 
 This "frame of mind" for creating games is different than what most Unity developers are used to, but once understood the possibilities of where an idea can go are limitless.
 
+----------
+
+## Legacy Documentation
+
+uFrame is currently migrating to this open-source project repository.  The previous (and still mostly relevant) <a href="https://github.com/InvertGames/uFrame.Documentation" target="_blank">documentation exists here</a>.
+
+----------
+
 ## Quick Start
 
 ### For Architect user
